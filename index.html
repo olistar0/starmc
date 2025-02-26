@@ -1,5 +1,236 @@
-<html>
-<styles>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CozySMP &bull; Welcome</title>
+    <meta name="title" content="CozySMP &bull; Welcome">
+    <meta name="theme-color" content="#1d1d1d">
+    <meta name="description" content="Welcome to the official CozySMP Store! Here, you can purchase ranks, and more!" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CozySMP" />
+    <meta property="og:title" content="CozySMP &bull; Welcome" />
+    <meta property="og:url" content="https://store.cozysmp.com/" />
+    <meta property="og:description" content="Welcome to the official CozySMP Store! Here, you can purchase ranks, and more!" />
+
+    <meta property="twitter:title" content="CozySMP &bull; Welcome">
+    <meta property="twitter:url" content="https://store.cozysmp.com/">
+    <meta property="twitter:description" content="Welcome to the official CozySMP Store! Here, you can purchase ranks, and more!" />
+    
+    <link rel="shortcut icon" href="https://dunb17ur4ymx4.cloudfront.net/webstore/favicons/6286dde32ebf18146fe313bcc1cab80811e59df5.png">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        
+        _gaq.push(['_setAccount', 'UA-36735942-3']);
+        _gaq.push(['_trackPageview']);
+        
+                
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    
+    <!-- Tebex.js -->
+    <script defer src="https://js.tebex.io/v/1.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+         :root {
+    --header-height: 570px;  /* The height of the header. This can be in PX or REM */
+    --logo-height: 160px; /* The height of the logo. This can be in PX or REM */
+    --header-margin-top: 9rem; /* The distance of the logo, discord, and server status texts from the top of the header */
+    --background-bg: #091007; /* The background color of the page. Dark color highly suggested. */
+    --element-bg: #171c0f; /* The background color for most of the elements on the page. Very dark variant of the primary color suggested. */
+    --table-border-color: #1c2311; /* The color of the borders of any tables in the theme. Dark variant of the primary color suggested. */
+    --background-overlay: rgba(0,0,0,0.3); /* The color of the header background overlay. Change the first three numbers (RGB) for color, last number for opacity. */
+    --secondary-background-overlay: rgba(0,0,0,0.6); /* Another layer of overlay. Recommended to keep the first three numbers the same */
+    --primary-color: #458441; /* The primary color of the theme */
+    --primary-light: #1ea636; /* A lighter variant of the primary color - used for a few gradiants across the webstore */
+    --success-color: #2C5728; /* The color used in some success buttons/messages. Green is recommended as it often indicates success */
+    --support-box: #FF3737; /* The color used as the border for the support box on the home page */
+    --support-background: rgba(255, 55, 55, 0.1); /* The background color of the support box. Recommended to use a darker version of the --support-box color. Keep the 0.1 value on the end as this represents opacity and is needed for the design (only change the first 3 numbers, the RGB code) */
+    --refund-box: #2959D2; /* The color used as the border for the refund box on the home page */
+    --refund-background: rgba(41, 89, 210, 0.1); /* The background color of the refund box. Recommended to use a darker version of the --refund-box color. Keep the 0.1 value on the end as this represents opacity and is needed for the design (only change the first 3 numbers, the RGB code) */
+}
+
+body {
+    background: var(--background-bg);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.noscroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Random Stuff */
+
+.cf-modal-header  {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+#hidden-page {
+    display: none !important;
+}
+
+.al {
+    display: none;
+    text-align: center; 
+    color: rgba(255,255,255,0.7); 
+    width: 60%; 
+    margin: 0 auto;
+    z-index: 2;
+}
+
+/* Header Buttons */
+.header-btn-row {
+    z-index: 12;
+    height: 66px;
+    /*background-color: rgba(0, 0, 0, 0.07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-btn-row .container {
+    display: flex;
+    margin-top: 0.75rem
+}
+
+.btn-header {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+}
+
+.btn-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    letter-spacing: 0.03rem;
+    margin-right: 1rem;
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: rgba(255,255,255,0.8)
+}
+
+.btn-header:hover, .btn-header:focus,  .btn-header:focus-visible, .btn-header:active {
+    background-color: #4d4949 !important;
+    border-radius: 10px !important;
+    border: 2px solid rgba(255, 255, 255, 0.25) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-home {
+    font-style: italic;
+}
+
+.btn-giftcard {
+    background-color: #555555;
+    color: #FFF;
+    margin-left: 0.4rem;
+}
+
+.btn-header i {
+    margin-right: 0.1rem;
+}
+
+.btn-header.btn-home i {
+    margin-right: 0.3rem;
+}
+
+
+/* Header */
+.header {
+    background: var(--header-background) no-repeat;
+    background-position: var(--background-position) center !important;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    height: var(--header-height);
+}
+
+.header:before {
+    background: linear-gradient(var(--background-overlay), var(--background-bg));
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: var(--header-height);
+}
+
+.header:after {
+    background: linear-gradient(var(--secondary-background-overlay), transparent);
+    height: var(--header-height);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+}
+
+.logo-ds-flex {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr auto 1fr;
+    left: 0;
+    top: var(--header-margin-top);
+    right: 0;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    z-index: 10;
+    justify-content: center;
+}
+
+.status-box-container, .discord-box-container {
+    z-index: 2;
+    margin-top: 6rem;
+}
+
 .logo-container {
     z-index: 2;
     height: fit-content;
@@ -21,11 +252,3282 @@
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
 }
-</styles>
-            <div>
-            <div class="logo-container">
-                <a href="/">
-                    <img class="logo logo-animated" alt="logo" src="/assets/img/mlogo.png">
+
+.sd-header {
+    font-weight: 800;
+    color: #FFF;
+    letter-spacing: 0.08rem;
+    font-size: 1.3rem;
+    margin-bottom: -0.2rem;
+}
+
+.sd-subtext {
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    height: 22px;
+    overflow: hidden;
+}
+
+.reel-1 {
+    transition: .25s;
+}
+
+.discord-box a:hover .reel-1, .status-box:hover .reel-1 {
+    margin-top: -18px;
+}
+
+/* Status section */
+
+.status-icon {
+    font-size: 1.7rem;
+    color: #FFF;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.status-icon .icon-circle, .discord-icon .icon-circle {
+    background: linear-gradient(var(--primary-color), var(--primary-light));
+    border-radius: 500rem;
+    height: 3.7rem;
+    width: 3.7rem;
+}
+
+.status-icon i {
+    display: inline-block;
+    margin-left: 1.4rem;
+    margin-top: 0.95rem;
+}
+
+.status-texts {
+    text-align: right;
+}
+
+.status-box {
+    display: flex;
+    justify-content: end;
+    margin-right: 3.5rem;
+    cursor: pointer;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: 2.9rem;
+    left: 2.2rem;
+    background-color: #C53232;
+    border-radius: 500rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #FFF;
+    padding: 0.15rem 0.6rem;
+}
+
+.spinner-border {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+/* Popup */
+
+.swal2-styled.swal2-confirm {
+    background-color: var(--primary-color) !important;
+    transition: 0.5s;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: none !important;
+}
+
+.swal2-modal {
+    background-color: var(--element-bg) !important;
+}
+  
+.swal2-title {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+  
+.swal2-html-container {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Discord Section */
+
+.discord-icon {
+    font-size: 1.6rem;
+    color: #FFF;
+    margin-right: 1rem;
+}
+
+.discord-icon i {
+    display: inline-block;
+    margin-left: 0.85rem;
+    margin-top: 1rem;
+}
+
+.discord-box {
+    margin-left: 3.5rem;
+}
+
+.discord-box a {
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* ---------- Package Loader (from https://css-loaders.com/dots/) ---------- */
+  
+#loader {
+    z-index: 1051;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,rgba(255,255,255,0.8) 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 0;
+}
+
+.credit-icon  {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.credit-icon img {
+    height: 50px;
+    filter: grayscale(1);
+    opacity: 0.1;
+    transition: 0.4s;
+}
+
+.credit-icon img:hover {
+    filter: grayscale(0);
+    opacity: 0.5;
+}
+
+.footer .copyright {
+    margin-top: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.95rem;
+}
+
+.footer .copyright span {
+    color: rgba(255,255,255,0.4);
+}
+
+.footer .copy-subtext {
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+}
+
+.footer-spacer {
+    height: 5rem;
+}
+
+.footer-language {
+    margin-left: 1.4rem
+}
+
+.footer-language button {
+    margin-top: .55rem;
+    margin-right: .3rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, .3);
+    padding: .2rem .5rem;
+    background-color: rgba(255, 255, 255, .04);
+    border-radius: .5rem;
+    border: none;
+}
+
+.footer-language button:after {
+    display: none !important;
+}
+
+.social-media-box {
+    margin-top: .55rem;
+    margin-right: .3rem;
+    font-size: 1.2rem;
+    padding: .2rem .5rem;
+    background-color: rgba(255, 255, 255, .04);
+    border-radius: .5rem;
+    border: none;
+    margin-left: .4rem;
+}
+
+.social-media-box .social-link {
+    color: rgba(255, 255, 255, .3);
+    text-decoration: none;
+    transition: .5s;
+    margin: 0 .2rem;
+}
+
+.social-media-box .social-link:hover, .social-media-box .social-link:focus {
+    color: rgba(255, 255, 255, .7);
+}
+
+/*---------- Containers ----------*/
+
+@media (min-width: 768px) {
+.container {
+  max-width: 680px;
+}
+}
+@media (min-width: 850px) {
+.container {
+  max-width: 750px;
+}
+}
+@media (min-width: 992px) {
+.container {
+  max-width: 900px;
+}
+}
+@media (min-width: 1100px) {
+.container {
+  max-width: 1000px;
+}
+}
+@media (min-width: 1200px) {
+.container {
+  max-width: 1100px;
+}
+}
+@media (min-width: 1500px) {
+.container {
+  max-width: 1200px;
+}
+}
+@media (min-width: 1600px) {
+.container {
+  max-width: 1300px;
+}
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 27%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 73%;
+    }
+}
+
+/* ---------- Util ---------- */
+
+.card {
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    background-color: var(--element-bg);
+    box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.03) inset;
+}
+
+.main-container {
+    margin-top: -10rem;
+    z-index: 3;
+}
+
+/* ---------- Index ----------- */
+
+.store-heading {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-light));
+    width: fit-content;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08rem;
+}
+
+.store-subheading {
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.25);
+    margin-top: 0.2rem;
+}
+
+.store-description {
+    margin-top: 1.4rem;
+    line-height: 1.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.store-description img {
+    max-width: 100%;
+    height: auto;
+}
+
+.store-description p:first-child {
+    width: 75%;
+}
+
+/* ---------- Login ---------- */
+
+.login-text {
+    color: #FFF;
+    font-weight: 800;
+    margin-top: 1.4rem;
+    line-height: 1.25rem;
+    flex-grow: 1;
+}
+
+.login-arrow {
+    font-size: 3.3rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    transition: .5s;
+}
+
+.login-box {
+    background: linear-gradient(var(--primary-color), var(--primary-light));
+    height: 80px;
+    border-radius: 14px;
+    display: flex;
+    margin-bottom: 1rem; 
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.2) inset;
+}
+
+.login-box:hover .login-arrow, .login-box:focus .login-arrow {
+    color: rgba(255, 255, 255, 0.65);
+    margin-left: 0.2rem;
+    margin-right: 1.3rem;
+}
+
+.login-skin img {
+    height: 130px;
+    margin-top: .7rem;
+    margin-left: -1.2rem;
+    margin-right: -1.3rem;
+}
+
+.login-skin, .login-skin-loggedin {
+    margin: 0 1rem;
+}
+
+.login-skin-loggedin img {
+    height: 40px;
+    margin-top: 1.3rem;
+    border-radius: .25rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-header {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    margin-top: -0.2rem;
+    letter-spacing: 0.08rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.oval {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 500rem;
+}
+
+.oval-1 {
+    width: 15px;
+    height: 15px;
+    top: 1rem;
+    left: 0.3rem;
+}
+
+.oval-2 {
+    width: 25px;
+    height: 25px;
+    left: 6rem;
+    bottom: -0.7rem;
+}
+
+.oval-3 {
+    width: 20px;
+    height: 20px;
+    left: 14rem;
+    top: 0.3rem;
+}
+
+.oval-4 {
+    width: 10px;
+    height: 10px;
+    left: 12rem;
+    bottom: 0.3rem;
+}
+
+.logout-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+}
+
+.cart-icon {
+    font-size: 2.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    transition: .5s;
+    position: relative;
+}
+
+/* ---------- Category Sidebar ---------- */
+
+.categories-sidebar-card {
+    border-radius: 10px;
+    background-color: var(--element-bg);
+    box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.03) inset;
+}
+
+.categories-sidebar {
+    padding: 2rem 2.5rem;
+}
+
+.category {
+    display: flex;
+    cursor: pointer;
+}
+
+.categories-sidebar div:not(:last-child) .category { 
+    margin-bottom: 1.4rem;
+}
+
+.category-icon {
+    margin-right: .6rem;
+}
+
+.category-icon img {
+    height: 44px;
+}
+
+.category-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.7);
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin-top: 0.5rem;
+    margin-bottom: .5rem;
+    position: relative;
+    transition: .5s;
+}
+
+.category-name.active, .category:hover .category-name, .category:focus .category-name {
+    color: #FFF;
+}
+
+.category-name.active:after {
+    content: "";
+    width: 50%;
+    height: .25rem;
+    background: var(--primary-color);
+    position: absolute;
+    bottom: -0.2rem;
+    left: 0;
+    border-radius: 10px;
+}
+
+.category-name i {
+    transition: .5s;
+}
+
+.categories-sidebar a {
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+}
+
+.category-icon {
+    width: 50px;
+}
+
+.categories-sidebar .category-dropdown {
+    background-color: rgba(255,255,255,0.05);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    margin-top: -.5rem;
+    padding: 0 1.5rem;
+    transition: .7s;
+    overflow: hidden;
+}
+
+.categories-sidebar .category-dropdown:not(.active) {
+    max-height: 0 !important; 
+    /* Tosfoy */
+}
+
+.categories-sidebar .category-dropdown-item:first-child { 
+    padding-top: 1.15rem;
+}
+
+.categories-sidebar .category-dropdown-item:last-child { 
+    padding-bottom: 1.15rem;
+}
+
+.categories-sidebar .category-dropdown.active {
+    max-height: 500px;
+}
+
+.categories-sidebar .category-dropdown-item {
+    color: rgba(255,255,255,0.7);
+    display: block !important;
+    padding: 0.4rem 0;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.categories-sidebar .category-dropdown-item:hover, .categories-sidebar .category-dropdown-item:focus {
+    color: #FFF;
+}
+
+.category-dropdown-parent {
+    min-height: 66.39px;
+}
+
+/* ---------- Top Donator ---------- */
+
+.top-donator {
+    border-top: 3px solid rgba(255, 255, 255, 0.05);
+    padding: 0 2.5rem;
+    display: flex;
+    height: 90px;
+    overflow: hidden;
+    padding-top: 0.5rem;
+}
+
+.donator-img img {
+    height: 130px;
+}
+
+.donator-text {
+    flex-grow: 1;
+    margin-right: 1rem;
+}
+
+.donator-title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+}
+
+.donator-subtitle {
+    font-weight: 500;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.1rem;
+}
+
+.donator-subtitle span {
+    color: rgba(255,255,255,0.8);
+}
+
+
+/* ------------ Featured Package ----------- */
+
+.main-circle {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    background-color: var(--featured-circle-color);
+    box-shadow: inset 0 0 0 4px var(--featured-circle-color);
+    text-align: center;
+    border-radius: 500rem;
+    right: 0;
+    bottom: -2.3rem;
+    z-index: 3;
+}
+
+.circle-heading {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-size: 0.6rem;
+    margin-top: 0.8rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.circle-title {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    line-height: 1.6rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.circle-price {
+    color: rgba(255,255,255,0.6);
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    position: relative;
+}
+
+.circle-mask {
+    position: absolute;
+    height: 152px;
+    width: 152px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 500rem;
+    right: 4px;
+    top: 4px;
+}
+
+.index-header-group {
+    position: relative;
+}
+
+.image-circle {
+    position: absolute;
+    height: 110px;
+    width: 110px;
+    background-color: var(--featured-circle-color);
+    box-shadow: inset 0 0 0 4px var(--featured-circle-color);
+    text-align: center;
+    border-radius: 500rem;
+    right: 9.2rem;
+    bottom: -.9rem;
+    z-index: 2;
+}
+
+.image-circle img {
+    height: 60px;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+.circle-mask-image {
+    position: absolute;
+    height: 102px;
+    width: 102px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 500rem;
+    right: 4px;
+    bottom: 4px;
+}
+
+.small-circle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: var(--featured-circle-color);
+    box-shadow: inset 0 0 0 4px var(--featured-circle-color);
+    border-radius: 500rem;
+    right: 8.2rem;
+    bottom: -1.4rem;
+}
+
+.circle-mask-small {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 500rem;
+    right: 4px;
+    bottom: 4px;
+}
+
+.circle-price .discount {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: -0.3rem;
+}
+
+#dot1, #dot2, #dot3 {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 7px;
+    width: 7px;
+    border-radius: .5rem;
+    position: absolute;
+    right: -1.1rem;
+    cursor: pointer;
+}
+
+#dot1.dots-3 {
+    top: 0.5rem;
+}
+
+#dot2.dots-3 {
+    top: 1.4rem
+}
+
+#dot3.dots-3 {
+    top: 2.3rem
+}
+
+#dot1.dots-2 {
+    top: 0.8rem;
+}
+
+#dot2.dots-2 {
+    top: 1.7rem
+}
+
+/* ----------- Support & Refund ---------- */
+
+.index-info {
+    display: flex;
+    flex: 1 1 0px;
+    margin-top: 1.4rem;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.support-title, .refund-title {
+    font-family: 'Poppins', sans-serif;
+    margin-top: -2rem;
+    margin-bottom: 0.5rem;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.9rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+}
+
+.support-box, .refund-box {
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.support-box {
+    border: 3px solid var(--support-box);
+    background-color: var(--support-background);
+}
+
+.support-title {
+    background-color: var(--support-box);
+}
+
+.refund-box {
+    border: 3px solid var(--refund-box);
+    background-color: var(--refund-background)
+}
+
+.refund-title {
+    background-color: var(--refund-box);
+    /* %%__USERNAME__%% */
+}
+
+.support-box span, .refund-box span {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+.support-description a, .refund-description a {
+    color: #FFF;
+}
+
+/* ---------- Login Modal ----------- */
+
+.modal-content {
+    background-color: var(--element-bg);
+}
+
+.modal-dialog {
+    margin-top: 10rem;
+    max-width: 650px;
+}
+
+.modal-body {
+    padding: 3rem 4rem;
+}
+
+body.modal-open {
+    overflow-y: hidden; 
+}
+
+.login-page-header {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    letter-spacing: 0.03rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.login-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+    grid-gap: .8rem;
+}
+
+.login-select-btn {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 3px inset rgba(255, 255, 255, 0.1);
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.login-select-btn:hover, .login-select-btn:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 3px inset rgba(255, 255, 255, 0.25);
+}
+
+.login-select-btn.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px inset rgba(255, 255, 255, 0.5);
+}
+
+.login-select-icon {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+
+.login-select-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    line-height: 1.1rem;
+    margin-left: 1rem;
+    margin-top: .4rem;
+    font-size: .9rem;
+}
+
+#login-form .case-warning {
+    color: rgba(255, 255, 255, 0.3);
+    font-style: italic;
+    display: block;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+}
+
+.login-page-flex {
+    display: flex;
+    gap: .5rem;
+}
+
+#login-form input {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+    box-shadow: 0 0 0 3px inset rgba(0, 0, 0, 0.15);
+}
+
+#login-form .btn-theme {
+    padding: .5rem 2rem;
+}
+
+.login-helper {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#login-form input::placeholder {
+  color: rgba(255,255,255,0.3);
+  opacity: 1;
+  font-weight: 500;
+}
+
+.login-error #login-form input {
+    background-color: rgb(121 51 51 / 30%);
+    border: 3px solid rgb(211 62 62 / 50%);
+}
+
+/* ---------- Buttons/Inputs ---------- */
+
+.btn-theme {
+    background-color: var(--primary-color);
+    color: #FFF;
+    letter-spacing: 0.08rem;
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn-theme:hover, .btn-theme:focus {
+    filter: brightness(80%);
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.5);
+  opacity: 1;
+  font-weight: 500;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* ---------- Index Widgets ----------- */
+
+.index-widget-flexbox {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.9rem;
+}
+
+.widget {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+
+.widget .w-icon {
+    font-size: 3.4rem;
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.widget .w-title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.w-user-row img {
+    width: 30px;
+    margin-right: 0.3rem;
+    border-radius: .5rem;
+}
+
+.payments-filler-box {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.3rem;
+    border-radius: .5rem;
+    background-color: rgba(255,255,255,0.1);
+    display: inline-block
+}
+
+.w-subtext {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: -0.3rem;
+}
+
+/* Progress Circle */
+
+#progress{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+.progress-item {
+    display: flex;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    font-size: 0;
+    background: conic-gradient(var(--primary-color) calc(var(--data-number)), rgba(255, 255, 255, 0.25) 0deg);
+}
+  
+.progress-item::after {
+    content: attr(data-num);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 74px;
+    margin: 10px;
+    border-radius: 50%;
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+    background: var(--element-bg);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/*----------- Widget Positioning -----------*/
+
+/* Payment Goal and Payments and Community Goal */
+.index-widget-flexbox .module-featuredpackage, .index-widget-flexbox .module-giftcard, .index-widget-flexbox .module-textbox, .index-widget-flexbox .module-topdonator {
+    display: none;
+}
+
+/* Top Donator */
+.top-donator-container .module-communitygoal, .top-donator-container .module-featuredpackage, .top-donator-container .module-giftcard, .top-donator-container .module-goal, .top-donator-container .module-payments, .top-donator-container .module-textbox {
+    display: none;
+}
+
+/* Featured Package */
+.index-header-group .module-communitygoal, .index-header-group .module-giftcard, .index-header-group .module-textbox, .index-header-group .module-topdonator, .index-header-group .module-payments, .index-header-group .module-goal {
+    display: none;
+}
+
+
+/* Textbox */
+.modules-container .module-communitygoal, .modules-container .module-featuredpackage, .modules-container .module-goal, .modules-container .module-payments, .modules-container .module-topdonator, .modules-container .module-giftcard {
+    display: none;
+}
+
+.module-textbox {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 1rem;
+}
+
+.textbox-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem
+}
+
+/* Giftcard */
+.giftcard-container .module-communitygoal,  .giftcard-container .module-featuredpackage,  .giftcard-container .module-goal, .giftcard-container .module-payments,  .giftcard-container .module-textbox, .giftcard-container .module-topdonator {
+    display: none;
+}
+
+
+
+/*----------- Discounts -----------*/
+
+.discount {
+    color: #fb3535 !important;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+/*---------- Package Grid ----------- */
+
+.category-description {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.5rem;
+}
+
+.card.package {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.05) inset;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.card.package img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.package-grid-title {
+    color: #FFF;
+    letter-spacing: 0.05rem;
+    margin-top: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.package-grid-price {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+}
+
+.btn-package-add {
+    color: #FFF;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.15) inset;
+    border: none;
+    letter-spacing: 0.03rem;
+    margin-top: 1.2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.btn-package-add:hover, .btn-package-add:focus {
+    filter: brightness(75%);
+    color: #FFF;
+    background-color: var(--primary-color);
+}
+
+.btn-package-remove {
+    color: #FFF;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+    box-shadow: 0 -5px 0 rgba(0, 0, 0, 0.15) inset;
+    border: none;
+    letter-spacing: 0.03rem;
+    margin-top: 1.2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.btn-package-remove:hover, .btn-package-remove:focus {
+    filter: brightness(75%);
+    color: #FFF;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btn-package-add i {
+    margin-right: 0.2rem;
+}
+
+.table td, .table th {
+    background-color: rgba(255,255,255,0.03);
+    color: rgba(255,255,255,0.5);
+}
+
+.table {
+    border: 2px solid var(--table-border-color);
+    margin-top: 1rem;
+}
+
+.table td, .table th {
+    border-top: 2px solid var(--table-border-color);
+    padding: 1rem;
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--table-border-color);
+}
+
+.table .name {
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    padding-top: 1.5rem;
+}
+
+.table .price {
+    padding-top: 1.5rem;
+}
+
+.table .btn-package-add, .table .btn-package-remove {
+    margin-top: 0rem;
+}
+
+/*---------- Cart Menu -----------*/
+
+.cart-menu {
+    background-color: var(--element-bg);
+    width: 480px;
+    right: -480px;
+    top: 0;
+    height: 100%;
+    position: fixed;
+    transition: .5s;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-menu-overlay {
+    background-color: rgba(0,0,0,0.5);
+    z-index: 15;
+    opacity: 0;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.cart-menu.active {
+    right: 0;
+}
+
+.cart-menu-overlay.active {
+    opacity: 1;
+    display: block;
+}
+
+.cart-menu-header {
+    padding: 1.5rem 2.75rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+}
+
+.cart-title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.08rem;
+    flex-grow: 1;
+}
+
+.cart-currency {
+    display: inline-block;
+}
+
+.cart-buttons .btn-package-remove {
+    margin-top: 0;
+    font-size: 0.7rem;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+}
+
+.cart-menu-body {
+    flex-grow: 1;
+}
+
+.cart-menu-footer {
+    padding: 1.5rem 2.75rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.cart-total-box {
+    display: flex;
+    margin: 0.7rem 0;
+}
+
+.cart-menu-footer .btn {
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1.1rem;
+}
+
+.cart-total {
+    flex-grow: 1;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.cart-total-value {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.1rem;
+}
+
+.cart-package {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.cart-menu-body {
+    padding: 2rem 2.75rem;
+    overflow-y: scroll;
+}
+
+.cart-img {
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 130px;
+    height: 130px;
+    border-radius: .5rem;
+    display: flex;
+}
+
+.cart-img img {
+    max-height: 90%;
+    max-width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.cart-details {
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.cart-name {
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: .5rem;
+}
+
+.cart-name i {
+    margin-right: 0.2rem;
+}
+
+.cart-price {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03rem;
+    margin-top: 0.3rem;
+}
+
+.cart-remove {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    margin-top: 0.3rem;
+}
+
+.cart-close {
+    display: none
+}
+
+.quantity-selector {
+    display: inline-flex;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: .25rem;
+    margin-right: 0.5rem;
+    width: fit-content;
+}
+
+.quantity-minus, .quantity-plus {
+    padding: 0.2rem 0.6rem;
+    cursor: pointer;
+}
+
+.quantity-number {
+    color: rgba(255,255,255,0.1);
+    padding: 0.2rem 0.3rem;
+}
+
+.quantity-number input {
+    background-color: transparent;
+    padding: 0;
+    width: 20px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.submit-quantity {
+    color: var(--success-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-currency {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1) inset;
+    color: #FFF;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding: 0.6rem 1.3rem;
+    border: none;
+    letter-spacing: 0.03rem;
+    transition: .5s;
+}
+
+.btn-currency:hover, .btn-currency:focus {
+    color: #FFF;
+    filter: brightness(80%)
+}
+
+.dropdown-menu {
+    background-color: var(--element-bg);
+    border: none;
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+}
+
+.dropdown-item {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.cart-empty {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.options-frame {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*---------- Scrollbar ----------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(255,255,255,0.1);
+}
+
+.dark ::-webkit-scrollbar-track, .dark ::-webkit-scrollbar-corner {
+    background: var(--background-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/*------------ Giftcard Module ----------*/
+
+.giftcard-container {
+    display: inline-block;
+}
+
+.module-giftcard .dropdown-menu {
+    width: 300px;
+    padding: 2rem 2.5rem;
+}
+
+.giftcard-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.module-giftcard input {
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.module-giftcard input::placeholder {
+  color: rgba(255,255,255,0.5);
+  opacity: 1;
+  font-weight: 500;
+}
+
+.module-giftcard .btn-package-add {
+    margin-top: .75rem;
+}
+
+.module-giftcard .btn-header:after {
+    display: none;
+}
+
+.gc-status-message {
+    display: none;
+    margin-top: 1rem;
+    /* %%__USERNAME__%% */
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*---------- Package Modal ----------*/
+
+.modal-package {
+    max-width: 1000px;
+}
+
+.modal-package .modal-body {
+    display: flex;
+    max-height: 600px;
+    padding: 0;
+}
+
+.package-modal-description {
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding: 3rem 2rem;
+    color: rgb(255 255 255 / 70%);
+}
+
+.package-modal-description p:nth-child(2) {
+    width: 90%;
+}
+
+.package-modal-info {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 4rem 2rem;
+    box-shadow: -3px 0px 0px 0px rgba(255, 255, 255, 0.05) inset;
+    display: flex;
+    text-align: center;
+}
+
+.package-info-group {
+    margin: auto;
+    width: 100%;
+}
+
+.package-modal-close {
+    position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 1rem 1.3rem;
+    border-radius: 500rem;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.package-modal-close:hover, .package-modal-close:focus {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.p-name {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.p-price  {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+
+.p-img img {
+    max-width: 80%;
+}
+
+.p-button .btn {
+    padding: 0.6rem 2.5rem;
+    width: 100%;
+}
+
+.p-button .btn:disabled {
+    color: #FFF;
+    background-color: var(--primary-color);
+    filter: brightness(0.6);
+}
+
+.p-button .btn:nth-child(2) {
+    margin-top: .5rem;
+}
+
+.btn-gift {
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 0.8rem;
+    transition: .25s;
+}
+
+.btn-gift:hover, .btn-gift:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gift-fields {
+    display: none;
+    margin-top: 0.7rem;
+}
+
+.gift-fields form {
+    display: flex;
+}
+
+.gift-fields input {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 0.9rem;
+}
+
+.gift-fields input::placeholder {
+  color: rgba(255,255,255,0.5);
+  opacity: 1;
+  font-weight: 500;
+}
+
+.btn-successful {
+    color: #FFF;
+    background-color: var(--success-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    letter-spacing: 0.03rem;
+    transition: .5s;
+    margin-left: 0.5rem;
+}
+
+.btn-successful:hover, .btn-successful:focus {
+    filter: brightness(75%);
+    color: #FFF;
+    background-color: var(--success-color);
+}
+
+/*------------ CMS/Page ------------*/
+
+.page-content {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 1rem;
+}
+
+/*----------- Options Modal -----------*/
+
+.p-options-modal .modal-dialog {
+    max-width: 600px;
+}
+
+.p-options-modal .modal-body {
+    display: block;
+    padding: 2rem 4rem;
+}
+
+.package-options-header {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.package-options-body input {
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#options-submit {
+    width: fit-content;
+}
+
+.package-options-body select {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+}
+
+select:focus {
+    outline: none;
+}
+
+.package-options-body option {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-weight: 500;
+}
+
+/* Fallback Checkout Page */
+
+.checkout .cart-remove {
+    margin-top: 0.9rem;
+}
+
+.checkout-total {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.03rem;
+    margin-top: 0.8rem;
+}
+
+.checkout-total span {
+    color: #FFF;
+    margin-right: 0.2rem;
+}
+
+.checkout .options-frame i {
+    color: var(--primary-color)
+}
+
+/*----------- Support Modal -----------*/
+
+#supportModal .modal-dialog {
+    max-width: 700px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#supportModal .package-modal-close {
+    top: 3rem;
+    right: 3.8rem;
+    padding: .7rem 1rem;
+}
+
+.support-modal-title {
+    font-weight: 800;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.support-modal-tebex {
+    margin: 1.5rem 0;
+}
+
+.btn-support {
+    border-radius: .5rem;
+    color: #FFF;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    transition: .5s;
+    border: none;
+    width: 50%;
+}
+
+.btn-support:hover, .btn-support:focus {
+    filter: brightness(80%)
+}
+
+.btn-tebex {
+    background-color: #1A1B1C;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.05);
+}
+
+.btn-discord {
+    background-color: #5865F2;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.15);
+    flex: 0 40%;
+}
+
+.btn-email {
+    background-color: #2B2B2B;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.05);
+    flex: 0 60%;
+}
+
+.btn-email i, .btn-discord i {
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 0.2rem;
+}
+
+.support-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.support-text span {
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+}
+
+/* Giftcard Addon */
+
+.gc-flex {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-top: 1.5rem;
+}
+
+.gc-img {
+    background-color: #515151;
+    border-radius: .5rem;
+    height: 200px;
+}
+
+.gc-top-flex {
+    padding: 1.5rem;
+    display: flex;
+    color: #FFF;
+}
+
+.gc-icon {
+    flex-grow: 1;
+    font-size: 2rem;
+}
+
+.gc-text {
+    font-weight: 800;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.gc-lines {
+    padding: 1.5rem;
+    margin-top: -1.3rem;
+}
+
+.gc-lines div {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 12px;
+}
+
+.gc-line-1 {
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+.gc-line-2 {
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.gc-line-3 {
+    width: 70%;
+}
+
+.gc-amount {
+    margin-left: 2.5rem;
+}
+
+.gc-amount-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.gc-amount-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: .8rem;
+    margin: 1rem 0;
+
+}
+
+.gc-amount-btn {
+    grid-column: span 2;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+    border-radius: .25rem;
+    cursor: pointer;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: .4rem 1rem;
+    transition: .5s;
+}
+
+.gc-amount-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, .9);
+}
+
+.gc-amount-btn.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.gc-amount-btn-lg {
+    grid-column: span 3;
+    border-radius: .25rem;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.gc-btn-gold {
+    background-color: rgba(252, 199, 10, .4);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.gc-btn-gold:hover {
+    background-color: rgba(252, 199, 10, .55);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.gc-btn-gold.active {
+    background-color: rgba(252, 199, 10, .7);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.gc-btn-gold .gc-extra {
+    color: #FFB800
+}
+
+.gc-btn-diamond .gc-extra {
+    color: #00F0FF;
+}
+
+.gc-btn-diamond {
+    background-color: rgba(10, 208, 252, .4);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.gc-btn-diamond:hover {
+    background-color: rgba(10, 208, 252, .5);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.gc-btn-diamond.active {
+    background-color: rgba(10, 208, 252, .6);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.gc-extra {
+    font-size: .9rem;
+}
+
+.gc-amount .btn-package-add {
+    padding: .6rem 3rem;
+    margin-top: .5rem;
+}
+
+.gc-disabled {
+    filter: brightness(0.5);
+    pointer-events: none;
+}
+
+.gc-amount .oval-3 {
+    left: 10rem;
+}
+
+.gc-amount .oval-4 {
+    left: 1rem;
+}
+
+.gc-amount .oval-2 {
+    left: 7.5rem;
+}
+
+.gc-page .giftcard-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+.gc-page form {
+    display: flex;
+}
+
+.gc-page form .btn-package-add {
+    width: 150px;
+    margin-left: .5rem;
+}
+
+/* Media Queries for Responsive Site */
+
+@media (max-width: 1500px) {
+
+    .b7 {
+        display: none;
+    }
+      
+    #view-cart .cart-icon {
+        margin-right: .8rem;
+        font-size: 2.5rem;
+        margin-top: .8rem;
+    }
+
+    .categories-sidebar {
+        padding: 2rem 1.5rem;
+    }
+
+    .top-donator {
+        padding: 0 1.5rem;
+        padding-top: 0.5rem;
+    }
+    .login-box .login-text {
+        font-size: 0.9rem;
+        margin-left: -.5rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .logout-link span {
+        display: none;
+    }
+
+    .category-icon {
+        width: 42px;
+    }
+
+    .category-icon img {
+        height: 36px;
+    }
+
+    .category-name {
+        font-size: 1.1rem;
+        margin-top: 0.4rem;
+        margin-bottom: .4rem;
+    }
+
+    .donator-title {
+        font-size: .8rem
+    }
+
+    .donator-img {
+        margin-right: -.8rem;
+    }
+
+    .store-subheading {
+        width: 50%;
+    }
+
+    .main-circle {
+        bottom: -1.5rem;
+    }
+    .image-circle {
+        bottom: 0rem;
+    }
+    .small-circle {
+        bottom: -0.6rem;
+    }
+    
+    .b6 {
+        display: none
+    }
+
+    .login-box.loggedout .login-text {
+        font-size: .8rem;
+        line-height: 1rem;
+        margin-top: 1.1rem;    
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .donator-text {
+        margin-right: .5rem;
+    }
+
+    .donator-title i {
+        display: none;
+    }
+    
+    .category-icon {
+        display: none;
+    }
+
+    .login-box.loggedout .login-skin {
+        display: none
+    }
+
+    .login-box.loggedout .login-text {
+        margin-left: 1.5rem;
+        font-size: .8rem;
+        line-height: 1.3rem;
+    }
+
+    .gc-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gc-amount {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .categories-sidebar-card {
+        margin-bottom: 1.5rem;
+    }
+    .logout-link span {
+        display: inline-block;
+    }
+
+    .category-icon {
+        width: 46px;
+        display: block
+    }
+
+    .category-icon img {
+        height: 40px;
+    }
+
+    .category-name {
+        font-size: 1.2rem;
+        margin-top: 0.45rem;
+        margin-bottom: .45rem;
+    }
+
+    .donator-title {
+        font-size: .9rem
+    }
+
+    .donator-img {
+        margin-right: -.3rem;
+    }
+
+    .donator-title i {
+        display: inline-block;
+    }
+
+    .login-box.loggedout .login-skin {
+        display: block
+    }
+
+    .login-box.loggedout .login-text {
+        margin-left: 0;
+        line-height: 1.25rem;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #supportModal .modal-dialog {
+        margin-top: 3rem;
+    }
+
+    #supportModal .modal-body {
+        padding: 2rem;
+    }
+
+    #supportModal .package-modal-close {
+        top: 2rem;
+        right: 1.8rem;
+    }
+
+    .support-flex {
+        flex-direction: column;
+    }
+
+    .btn-support {
+        width: 100%;
+    }
+
+    .module-featuredpackage, .dots-2, .dots-3 {
+        display: none !important
+    }
+    .store-subheading {
+        width: 100%;
+    }
+    .index-widget-flexbox, .index-info {
+        flex-direction: column;
+    }
+    .refund-box {
+        margin-top: 1rem;
+    }
+    .store-description p:first-child {
+        width: 100%;
+    }
+    .giftcard-container .btn-header span {
+        display: none;
+    }
+    .module-giftcard .btn-header {
+        padding: 0.5rem 1rem;
+    }
+    .header-btn-row .btn-link {
+        margin-right: .1rem;
+    }
+    .footer .copyright, .copy-subtext {
+        font-size: .7rem;
+    }
+
+    .copyright-container {
+        width: 50%
+    }
+
+    .cart-menu {
+        max-width: 100%;
+    }
+
+    .cart-close {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.03);
+        padding: .6rem 1rem;
+        border-radius: 500rem;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+        box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        transition: .25s;
+    }
+    
+    .cart-close:hover, .cart-close:focus {
+        color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.06);
+    }
+
+    .btn-package-remove, .btn-package-add, .btn-currency {
+        padding: 0.6rem 1rem;
+    }
+
+    .cart-img {
+        width: 100px;
+        height: 100px;
+        margin-top: .5rem;
+    }
+
+    .login-box.loggedout .login-text {
+        margin-top: 1.4rem;
+        font-size: .9rem
+    }
+
+    .modal-body {
+        padding: 2rem;
+    }
+
+    .modal-package .modal-body {
+        flex-direction: column;
+    }
+
+    .package-modal-info {
+        width: 100%;
+        box-shadow: none;
+        padding: 1.5rem;
+    }
+
+    .package-modal-info .p-img {
+        display: none;
+    }
+
+    .package-modal-description .package-modal-close {
+        left: 50%;
+        transform: translate(-50%, 0);
+        right: auto;
+        top: -4rem;
+        background-color: var(--element-bg);
+    }
+}
+
+@media (max-width: 550px) {
+    .login-select-icon {
+        display: none
+    }
+
+    .login-select-text {
+        text-align: center;
+        width: 100%;
+        margin: auto 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .gc-amount-btn {
+        font-size: 1rem;
+    }
+}    </style>
+    
+    <style>
+        @media (max-width: 1100px) {
+            .logo-ds-flex {grid-template-columns: auto;}
+            .status-box-container, .discord-box-container {display: none;}
+        }
+    </style>
+    
+  <script type="text/javascript">
+   (function(c,l,a,r,i,t,y){
+       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+   })(window, document, "clarity", "script", "fxlepb8eap");
+</script>
+</head>
+  <body>
+
+        <div class="header-btn-row">
+            <div class="container">
+            <div class="flex-grow-1">
+                <a class="btn btn-link btn-home" href="https://store.cozysmp.com/">
+                    <i class="fa-solid fa-arrow-left"></i> Main Page
                 </a>
             </div>
+            <div>
+                <button class="btn btn-link" data-toggle="modal" data-target="#supportModal">
+                    <i class="fa-solid fa-life-ring"></i> Support
+                </button>
+                <div class="giftcard-container">
+                                            <div class="module-topdonator top-donator">
+    <div class="donator-text">
+        <div class="donator-title"><i class="fa-solid fa-crown"></i> Top Customer</div>
+        <div class="donator-subtitle">
+                                <span>SirThumper</span>
+                                            Paid the most 
+                                        
+                                            this month.
+                                        </div>
+    </div>
+    <div class="donator-img">
+                    <img src="https://visage.surgeplay.com/full/512/SirThumper?y=-40&slim&775628d6431c23c7a678796c24f26c83" />
+            </div>
+</div><div class="module-payments widget">
+	 <div class="w-icon">
+	    <i class="fa-solid fa-star"></i>
+	 </div>
+	 <div class="w-description">
+	    <div class="w-title italic">We thank our recent customers!</div>
+	    <div class="w-user-row">
+	                        <img src="https://cravatar.eu/avatar/euroxwilly/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>euroxwilly</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/stargering/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>stargering</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/Grindalyx/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>Grindalyx</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+            	     </div>
+	  </div>
+</div>
+
+<div class="module-goal widget">
+	<div class="w-progress">
+	    <div id="progress" >
+            <div data-num="100%" style="--data-number: 100%;" class="progress-item"></div>
+        </div>
+	</div>
+	<div class="w-description">
+	    <div class="w-title">Monthly Goal</div>
+	    <div class="w-subtext">Support the server and help us reach our payment goal!</div>
+	</div>
+</div>
+<a class="module-featuredpackage toggle-modal" href="javascript:void(0);" data-remote="/package/6486995">
+<div class="main-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask"></div>
+	<div class="circle-heading">Featured Item</div>
+	<div class="circle-title">OWL Rank</div>
+    <div class="circle-price">
+            	        		90.00 USD
+    	    </div>
+</div>
+<div class="image-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-image"></div>
+	<img src="//dunb17ur4ymx4.cloudfront.net/packages/images/66fe18e79baa543652871510faa811620adb0759.png" />
+</div>
+<div class="small-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-small"></div>
+</div>
+</a>
+
+
+
+                                    </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="header" id="header-pjs" style="--header-background: url('https://i.imgur.com/xwemMMp.jpeg'); --background-position: center"></div>
+        
+        <div class="logo-ds-flex" data-breakpoint="1100px">
+            <div class="status-box-container">
+                <div class="status-box">
+                    <div class="status-texts">
+                        <div class="sd-header">Play Now</div>
+                        <div class="sd-subtext">
+                            <div class="ip reel-1"><span id="ip">play.cozysmp.com</span></div>
+                            <div class="reel-2">Click to copy IP</div>
+                        </div>
+                    </div>
+                    <div class="status-icon">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <div class="status-indicator">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="logo-container">
+                <a href="/">
+                    <img class="logo logo-animated" alt="logo" src="//dunb17ur4ymx4.cloudfront.net/webstore/logos/f552488478410617f53cead8475d236daeb88364.png">
+                </a>
+            </div>
+            
+            <div class="discord-box-container">
+                <div class="discord-box"><a href="https://discord.gg/kATTK6kB7Y">
+                    <div class="discord-icon">
+                        <div class="icon-circle">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                    </div>
+                    <div class="discord-texts">
+                        <div class="sd-header">Discord</div>
+                        <div class="sd-subtext">
+                            <div class="discord-status reel-1" data-id="1142650529114243153">Loading...</div>
+                            <div class="reel-2">Click to join now!</div>
+                        </div>
+                    </div>
+                </a></div>
+            </div>
+        </div>
+        
+        <div class="container main-container">
+            
+            <div class="row">
+                <div class="col-lg-3 sidebar-col">
+                    
+                     
+                    <div class="login-header">Shopping Cart</div>
+                    <div id="view-cart" class="login-box loggedin">
+                        <div class="oval oval-1"></div>
+                        <div class="oval oval-2"></div>
+                        <div class="oval oval-3"></div>
+                        <div class="oval oval-4"></div>
+                        <div class="login-skin-loggedin">
+                            <img src="https://mc-heads.net/avatar/OliStar11_MC/50" />
+                        </div>
+                        <div class="login-text">
+                            OliStar11_MC<br />
+                            <div class="logout-link">0 item(s) <span>&bull; 0.00 USD</span></div>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+                    </div>
+                                        
+                    
+                    <div class="categories-sidebar-card">
+                        <div class="categories-sidebar">
+                            
+                            
+                            
+                                                                                                                                    <div class="category-wrapper">
+                                    <a href="/category/ranks">
+                                        <div class="category">
+                                                                                        <div class="category-icon">
+                                                <img id="icon-ranks" src="//dunb17ur4ymx4.cloudfront.net/categories/images/4c8619b719fb67e8e810ebd5d02749c92bb93f7a.png" />
+                                            </div>
+                                                                                        <div class="category-name">
+                                                Ranks
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                                                                                                                                                                                        <div class="category-wrapper">
+                                    <a href="/category/crate-keys">
+                                        <div class="category">
+                                                                                        <div class="category-icon">
+                                                <img id="icon-crate-keys" src="//dunb17ur4ymx4.cloudfront.net/categories/images/ee386509bbb235046c1179cbf89c6336a4509873.png" />
+                                            </div>
+                                                                                        <div class="category-name">
+                                                Crate Keys
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                                                                                                                                                                                        <div class="category-wrapper">
+                                    <a href="/category/claim-blocks">
+                                        <div class="category">
+                                                                                        <div class="category-icon">
+                                                <img id="icon-claim-blocks" src="//dunb17ur4ymx4.cloudfront.net/categories/images/99e9f308c5a5315805998ab4bb89d445f4515a02.png" />
+                                            </div>
+                                                                                        <div class="category-name">
+                                                Claim Blocks
+                                            </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                                                                                                            
+                                                    </div>
+                        <div class="top-donator-container">
+                            <div class="module-topdonator top-donator">
+    <div class="donator-text">
+        <div class="donator-title"><i class="fa-solid fa-crown"></i> Top Customer</div>
+        <div class="donator-subtitle">
+                                <span>SirThumper</span>
+                                            Paid the most 
+                                        
+                                            this month.
+                                        </div>
+    </div>
+    <div class="donator-img">
+                    <img src="https://visage.surgeplay.com/full/512/SirThumper?y=-40&slim&775628d6431c23c7a678796c24f26c83" />
+            </div>
+</div><div class="module-payments widget">
+	 <div class="w-icon">
+	    <i class="fa-solid fa-star"></i>
+	 </div>
+	 <div class="w-description">
+	    <div class="w-title italic">We thank our recent customers!</div>
+	    <div class="w-user-row">
+	                        <img src="https://cravatar.eu/avatar/euroxwilly/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>euroxwilly</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/stargering/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>stargering</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/Grindalyx/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>Grindalyx</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+            	     </div>
+	  </div>
+</div>
+
+<div class="module-goal widget">
+	<div class="w-progress">
+	    <div id="progress" >
+            <div data-num="100%" style="--data-number: 100%;" class="progress-item"></div>
+        </div>
+	</div>
+	<div class="w-description">
+	    <div class="w-title">Monthly Goal</div>
+	    <div class="w-subtext">Support the server and help us reach our payment goal!</div>
+	</div>
+</div>
+<a class="module-featuredpackage toggle-modal" href="javascript:void(0);" data-remote="/package/6486995">
+<div class="main-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask"></div>
+	<div class="circle-heading">Featured Item</div>
+	<div class="circle-title">OWL Rank</div>
+    <div class="circle-price">
+            	        		90.00 USD
+    	    </div>
+</div>
+<div class="image-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-image"></div>
+	<img src="//dunb17ur4ymx4.cloudfront.net/packages/images/66fe18e79baa543652871510faa811620adb0759.png" />
+</div>
+<div class="small-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-small"></div>
+</div>
+</a>
+
+
+
+                        </div>
+                    </div>
+                    <div class="modules-container">
+                        <div class="module-topdonator top-donator">
+    <div class="donator-text">
+        <div class="donator-title"><i class="fa-solid fa-crown"></i> Top Customer</div>
+        <div class="donator-subtitle">
+                                <span>SirThumper</span>
+                                            Paid the most 
+                                        
+                                            this month.
+                                        </div>
+    </div>
+    <div class="donator-img">
+                    <img src="https://visage.surgeplay.com/full/512/SirThumper?y=-40&slim&775628d6431c23c7a678796c24f26c83" />
+            </div>
+</div><div class="module-payments widget">
+	 <div class="w-icon">
+	    <i class="fa-solid fa-star"></i>
+	 </div>
+	 <div class="w-description">
+	    <div class="w-title italic">We thank our recent customers!</div>
+	    <div class="w-user-row">
+	                        <img src="https://cravatar.eu/avatar/euroxwilly/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>euroxwilly</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/stargering/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>stargering</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/Grindalyx/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>Grindalyx</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+            	     </div>
+	  </div>
+</div>
+
+<div class="module-goal widget">
+	<div class="w-progress">
+	    <div id="progress" >
+            <div data-num="100%" style="--data-number: 100%;" class="progress-item"></div>
+        </div>
+	</div>
+	<div class="w-description">
+	    <div class="w-title">Monthly Goal</div>
+	    <div class="w-subtext">Support the server and help us reach our payment goal!</div>
+	</div>
+</div>
+<a class="module-featuredpackage toggle-modal" href="javascript:void(0);" data-remote="/package/6486995">
+<div class="main-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask"></div>
+	<div class="circle-heading">Featured Item</div>
+	<div class="circle-title">OWL Rank</div>
+    <div class="circle-price">
+            	        		90.00 USD
+    	    </div>
+</div>
+<div class="image-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-image"></div>
+	<img src="//dunb17ur4ymx4.cloudfront.net/packages/images/66fe18e79baa543652871510faa811620adb0759.png" />
+</div>
+<div class="small-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-small"></div>
+</div>
+</a>
+
+
+
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    	<div class="card">
+	    <div class="index-header-group">
+	        <div class="store-heading">CozySMP Store</div>
+	        <div class="store-subheading">Select a category on the left to get started!</div>
+	        <div class="module-topdonator top-donator">
+    <div class="donator-text">
+        <div class="donator-title"><i class="fa-solid fa-crown"></i> Top Customer</div>
+        <div class="donator-subtitle">
+                                <span>SirThumper</span>
+                                            Paid the most 
+                                        
+                                            this month.
+                                        </div>
+    </div>
+    <div class="donator-img">
+                    <img src="https://visage.surgeplay.com/full/512/SirThumper?y=-40&slim&775628d6431c23c7a678796c24f26c83" />
+            </div>
+</div><div class="module-payments widget">
+	 <div class="w-icon">
+	    <i class="fa-solid fa-star"></i>
+	 </div>
+	 <div class="w-description">
+	    <div class="w-title italic">We thank our recent customers!</div>
+	    <div class="w-user-row">
+	                        <img src="https://cravatar.eu/avatar/euroxwilly/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>euroxwilly</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/stargering/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>stargering</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/Grindalyx/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>Grindalyx</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+            	     </div>
+	  </div>
+</div>
+
+<div class="module-goal widget">
+	<div class="w-progress">
+	    <div id="progress" >
+            <div data-num="100%" style="--data-number: 100%;" class="progress-item"></div>
+        </div>
+	</div>
+	<div class="w-description">
+	    <div class="w-title">Monthly Goal</div>
+	    <div class="w-subtext">Support the server and help us reach our payment goal!</div>
+	</div>
+</div>
+<a class="module-featuredpackage toggle-modal" href="javascript:void(0);" data-remote="/package/6486995">
+<div class="main-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask"></div>
+	<div class="circle-heading">Featured Item</div>
+	<div class="circle-title">OWL Rank</div>
+    <div class="circle-price">
+            	        		90.00 USD
+    	    </div>
+</div>
+<div class="image-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-image"></div>
+	<img src="//dunb17ur4ymx4.cloudfront.net/packages/images/66fe18e79baa543652871510faa811620adb0759.png" />
+</div>
+<div class="small-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-small"></div>
+</div>
+</a>
+
+
+
+	    </div>
+	    <div class="store-description">
+	        <p class="title-of-subject support"><strong><span style="font-size:24px;">About us</span></strong></p><p>CozySMP is a Minecraft server made by dedicated long time players of Minecraft. Our goal is to offer a simple vanilla experience, with little additions.</p><p>Supporting us is highly appreciated! The majority of the funds are put straight back into the server! A Minecraft server has many cost unfortunately, while we have no problem paying the bills to ensure the best for CozySMP, any help is very appreciated and will help us a lot.</p><div class="body-obj"><p class="title-of-subject support"><span style="font-size:24px;"><strong>Support</strong></span></p><p>Need any questions answered before checkout? Waited more than 30 minutes but your package still has not arrived? Ask the community/staff on Discord, or for payment support, submit a support ticket on our discord.</p><p>If you are player, please join our discord for fast support! <a href="https://discord.gg/cozysmp"><strong>CLICK HERE TO JOIN</strong></a><br />If you have any questions or concerns, please contact <strong>cozysmp.mc@gmail.com</strong></p></div><div class="body-obj"><p class="title-of-subject refund"><strong><span style="font-size:24px;">Refund policy</span></strong></p><div><p>All payments are final and non-refundable. Attempting a chargeback or opening a PayPal dispute will result in <strong>permanent</strong> and irreversible <strong>banishment</strong> from all of our servers, and other minecraft stores.<br /><br />It could take between 1-20 minutes for your purchase to be credited in-game. If you are still not credited after this time period, please open a support ticket on our forums with proof of purchase and we will look into your issue.</p></div></div>
+	    </div>
+	    <div class="index-widget-flexbox">
+	        <div class="module-topdonator top-donator">
+    <div class="donator-text">
+        <div class="donator-title"><i class="fa-solid fa-crown"></i> Top Customer</div>
+        <div class="donator-subtitle">
+                                <span>SirThumper</span>
+                                            Paid the most 
+                                        
+                                            this month.
+                                        </div>
+    </div>
+    <div class="donator-img">
+                    <img src="https://visage.surgeplay.com/full/512/SirThumper?y=-40&slim&775628d6431c23c7a678796c24f26c83" />
+            </div>
+</div><div class="module-payments widget">
+	 <div class="w-icon">
+	    <i class="fa-solid fa-star"></i>
+	 </div>
+	 <div class="w-description">
+	    <div class="w-title italic">We thank our recent customers!</div>
+	    <div class="w-user-row">
+	                        <img src="https://cravatar.eu/avatar/euroxwilly/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>euroxwilly</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/stargering/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>stargering</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/Grindalyx/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>Grindalyx</strong></div>
+                                                        " />
+                            <img src="https://cravatar.eu/avatar/vwens/64" data-toggle="tooltip" data-html="true" title="
+                    <div class='mb-2'><strong>vwens</strong></div>
+                                                        " />
+            	     </div>
+	  </div>
+</div>
+
+<div class="module-goal widget">
+	<div class="w-progress">
+	    <div id="progress" >
+            <div data-num="100%" style="--data-number: 100%;" class="progress-item"></div>
+        </div>
+	</div>
+	<div class="w-description">
+	    <div class="w-title">Monthly Goal</div>
+	    <div class="w-subtext">Support the server and help us reach our payment goal!</div>
+	</div>
+</div>
+<a class="module-featuredpackage toggle-modal" href="javascript:void(0);" data-remote="/package/6486995">
+<div class="main-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask"></div>
+	<div class="circle-heading">Featured Item</div>
+	<div class="circle-title">OWL Rank</div>
+    <div class="circle-price">
+            	        		90.00 USD
+    	    </div>
+</div>
+<div class="image-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-image"></div>
+	<img src="//dunb17ur4ymx4.cloudfront.net/packages/images/66fe18e79baa543652871510faa811620adb0759.png" />
+</div>
+<div class="small-circle" style="--featured-circle-color: Featured Package;">
+    <div class="circle-mask-small"></div>
+</div>
+</a>
+
+
+
+	    </div>
+	    <div class="index-info">
+	        <div class="support-box">
+	            <div class="support-title">
+	                Support
+	            </div>
+	            <div class="support-description">
+	                For questions or support on in-game purchases, contact <span>tosfoycreations@gmail.com</span>. Please include your in-game name.
+	            </div>
+	        </div>
+	        <div class="refund-box">
+	            <div class="refund-title">
+	                Refund Policy
+	                	            </div>
+	            <div class="refund-description">
+	               When you make a purchase, you acknowledge that <span>all purchases are final</span>. We cannot provide a refund under any circumstances.
+	            </div>
+	        </div>
+	    </div>
+	</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                                                <div class="login-menu"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="supportModal" tabindex="-1" role="dialog" aria-labelledby="supportModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="package-modal-close" data-dismiss="modal"><i class="fa-solid fa-x"></i></div>
+                        <div class="support-modal-title">Support</div>
+                        <div class="support-modal-introduction">We strive to make sure that you have the best experience shopping our webstore, and are ready to assist you with any inquiries you have about our products or the checkout process.</div>
+                        <div class="support-modal-tebex">
+                            <div class="support-text">To inquire about the <span>checkout process</span> (refunds, declined payments, subscriptions, and more), please contact Tebex:</div>
+                            <a class="btn-support btn-tebex" href="https://www.tebex.io/support-customer">Tebex Customer Support</a>
+                        </div>
+                        <div class="support-modal-webstore">
+                            <div class="support-text">To inquire about any of our <span>products</span>, and for other <span>minor inquiries</span> please contact us through Discord or Email.</div>
+                            <div class="support-flex">
+                                                                <a class="btn-support btn-discord" href="https://discord.gg/kATTK6kB7Y"><i class="fa-brands fa-discord"></i> Discord Server</a>
+                                <button class="btn-support btn-email" data-original-title="Click to Copy" data-toggle="tooltip" data-placement="top"><i class="fa-regular fa-copy"></i> <span>cozysmp.mc@gmail.com</span></button>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="hidden-page"></div>
+        
+        <div class='al'>Your website has been disabled because it has been detected running a leaked copy of Radiant. If your copy is not leaked, visit https://coldfiredzn.com/discord for help</div>
+        
+        
+        <div class="cart-menu">
+            <div class="cart-menu-header">
+                <div class="cart-title">Cart</div>
+                <div class="cart-buttons">
+                    <div class="dropdown cart-currency">
+                        <button class="btn btn-currency dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USD
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=AUD">AUD</a>
+                                    </li>
+                                                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=BRL">BRL</a>
+                                    </li>
+                                                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=CAD">CAD</a>
+                                    </li>
+                                                                                                                                                                                            <li >
+                                    <a class="dropdown-item" href="?currency=DKK">DKK</a>
+                                    </li>
+                                                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=EUR">EUR</a>
+                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li >
+                                    <a class="dropdown-item" href="?currency=NOK">NOK</a>
+                                    </li>
+                                                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=NZD">NZD</a>
+                                    </li>
+                                                                                                                                                                                            <li >
+                                    <a class="dropdown-item" href="?currency=PLN">PLN</a>
+                                    </li>
+                                                                                                                                <li >
+                                    <a class="dropdown-item" href="?currency=GBP">GBP</a>
+                                    </li>
+                                                                                                                                                                                            <li >
+                                    <a class="dropdown-item" href="?currency=SEK">SEK</a>
+                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                <li class="active">
+                                    <a class="dropdown-item" href="?currency=USD">USD</a>
+                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>
+                    </div>
+                        
+                     
+                        <a href="/checkout/logout" class="btn btn-package-remove">Logout</a>
+                                        
+                    <div class="cart-close" data-dismiss="modal"><i class="fa-solid fa-x"></i></div>
+                </div>
+            </div>
+            <div class="cart-menu-body">
+                                    <div class="cart-empty">You have no packages added to your cart, please continue shopping!</div>
+                            </div>
+                    </div>
+        
+        <div class="cart-menu-overlay"></div>
+        
+        <div class="footer-spacer"></div>
+        <div class="footer">
+            <div class="container d-flex">
+                <div class="copyright-container">
+                    <div class="copyright">
+                        2024 © <span>CozySMP</span>. All rights reserved.
+                    </div>
+                    <div class="copy-subtext">
+                        Not affiliated with Mojang AB or Microsoft
+                    </div>
+                </div>
+                                                <div class="credit-icon flex-grow-1">
+                    <a href="https://coldfiredzn.com" target="_blank"><img src="https://cdn.coldfiredzn.com/radiant/coldfire.webp" /></a>
+                </div>
+            </div>
+        </div>
+    
+    
+    <div class="modal fade" id="popup-modal" tabindex="-1" role="dialog"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" id="775628d6431c23c7a678796c24f26c83" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js" integrity="sha256-tGZXBB9uK3MK1zLsI8b/1gZYQcBl8TMTi52kA2RmEKc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js" integrity="sha256-TDVBfv16L7aCIhk+iOR1cwAT/HDOsBAxKRbA+CWjx10=" crossorigin="anonymous"></script>    
+    <script>
+        var _0x4fd28f=_0x1d06;(function(_0x56ff85,_0x4f92d0){var _0x3016b9=_0x1d06,_0x365d24=_0x56ff85();while(!![]){try{var _0x530e68=-parseInt(_0x3016b9(0x156))/0x1*(parseInt(_0x3016b9(0x170))/0x2)+parseInt(_0x3016b9(0x136))/0x3+parseInt(_0x3016b9(0x138))/0x4*(parseInt(_0x3016b9(0x13e))/0x5)+-parseInt(_0x3016b9(0x1cf))/0x6+parseInt(_0x3016b9(0x1ac))/0x7*(parseInt(_0x3016b9(0x1a2))/0x8)+parseInt(_0x3016b9(0x182))/0x9+-parseInt(_0x3016b9(0x1a6))/0xa;if(_0x530e68===_0x4f92d0)break;else _0x365d24['push'](_0x365d24['shift']());}catch(_0x29fda7){_0x365d24['push'](_0x365d24['shift']());}}}(_0x2998,0xdbc49));var sd_status_texts=_0x4fd28f(0x1d3),store_type=_0x4fd28f(0x1ad),users_online=_0x4fd28f(0x167),user_online=_0x4fd28f(0x142),mc_copy_popup_title='IP\x20Copied',mc_copy_popup_subtext=_0x4fd28f(0x110),mc_copy_popup_button_text=_0x4fd28f(0x11b);if(sd_status_texts==_0x4fd28f(0x1d3)){var breakpoint=$(_0x4fd28f(0x137))[_0x4fd28f(0x13d)]('data-breakpoint'),breakpoint_filtered=parseInt(breakpoint,0xa);window[_0x4fd28f(0x148)]['width']>breakpoint_filtered&&$(window)['on'](_0x4fd28f(0x187),function(){var _0x3f4649=_0x4fd28f;if(store_type==_0x3f4649(0x1ad)){let _0x48560e=$(_0x3f4649(0x15c))[_0x3f4649(0x1c4)]();$[_0x3f4649(0x157)]({'url':'https://api.mcsrvstat.us/2/'+_0x48560e,'success':function(_0x2ae9f7){var _0x2c23b0=_0x3f4649;if(_0x2ae9f7[_0x2c23b0(0x113)]){let _0x2f6e9e=_0x2ae9f7[_0x2c23b0(0x113)],_0x16c2e9=_0x2ae9f7[_0x2c23b0(0x16f)][_0x2c23b0(0x113)];_0x538081(_0x2f6e9e,_0x16c2e9);}else{let _0x4c3b5b=null;_0x538081(_0x4c3b5b);}},'error':function(){var _0x2cb176=_0x3f4649;$[_0x2cb176(0x157)]({'url':'https://mcapi.us/server/status?ip='+_0x48560e,'success':function(_0x143016){var _0xb797a=_0x2cb176;if(_0x143016['online']){let _0x36edf3=_0x143016['online'],_0x3d9d7d=_0x143016[_0xb797a(0x16f)][_0xb797a(0x111)];_0x538081(_0x36edf3,_0x3d9d7d);}else{let _0x3cfa45=null;_0x538081(_0x3cfa45);}}});},'timeout':0x493e0});}function _0x538081(_0x35530e,_0x13c79d){var _0x61be07=_0x3f4649;let _0x1e23bd=$(_0x61be07(0x15b));_0x35530e?(_0x1e23bd['empty'](),_0x1e23bd[_0x61be07(0x122)](_0x13c79d)):(_0x1e23bd['empty'](),_0x1e23bd['html']('0'));}let _0x37fef9=$('.discord-status')[_0x3f4649(0x13d)]('data-id');;$[_0x3f4649(0x157)]({'url':_0x3f4649(0x13a)+_0x37fef9+_0x3f4649(0x12d),'success':function(_0x447302){let _0x1bd295=_0x447302['presence_count'];_0x9e546c(_0x1bd295);},'error':function(){},'timeout':0x493e0});function _0x9e546c(_0x2de823){var _0x4f6104=_0x3f4649;let _0x33e05b=$(_0x4f6104(0x114));_0x33e05b['empty'](),_0x2de823>0x1||_0x2de823<0x1?_0x33e05b['html']('<span\x20class=\x27status-number\x27>'+_0x2de823+_0x4f6104(0x18b)+users_online):_0x33e05b[_0x4f6104(0x122)](_0x4f6104(0x17b)+_0x2de823+'</span>\x20'+user_online);}});}$('.circle-title')[_0x4fd28f(0x189)](function(){var _0x4d798e=_0x4fd28f;$(this)[_0x4d798e(0x118)]()>0x46&&$(this)[_0x4d798e(0x125)](_0x4d798e(0x1b5),_0x4d798e(0x17e));});function _0x2998(){var _0x4dc60f=['noscroll','.index-header-group','replace','#login-page\x20form','modal-open','\x20<i\x20class=\x22fa\x20fa-chevron-up\x22\x20aria-hidden=\x22true\x22></i>','.module-featuredpackage.tab2','3803238PzDrKY','.logo-ds-flex','447728utxbKw','remote','https://discord.com/api/guilds/','fir','#login-form\x20.btn','attr','75XecRGV','tooltip','select','#ffffff','user\x20online','data-link','bedrock','fadeIn','<div\x20class=\x22modal-dialog\x20modal-package\x22\x20role=\x22document\x22><div\x20class=\x22modal-content\x22><div\x20class=\x22modal-body\x22></div></div></div>','.cart-menu','screen','POST','.category-dropdown-parent','val','180deg','.module-featuredpackage.tab3','#view-cart','data-mode','.submit-quantity','#popup-modal\x20.modal-body','p-options-modal','.package-options-body\x20form','.tooltip-inner','.gift-fields\x20form','32gMxEGP','ajax','server_response','.gc-addon-checkout','Time\x20Expired!','.status-indicator','#ip','.status-box','execCommand','modal','gift','max-height','<div\x20class=\x27dots-3\x27\x20id=\x27dot1\x27></div>','removeClass','ant/a','<div\x20class=\x27dots-2\x27\x20id=\x27dot1\x27></div>','addClass','users\x20online','#login-form','java','fast','ready','0.4','closest','#dot3','players','67076LdFRbK','#dot2','fire','0deg','.module-giftcard\x20form\x20.btn','edzn.c','.login-select-btn','slideDown','#login-page\x20.case-warning','.cart-edit','form','<span\x20class=\x27status-number\x27>','[data-toggle=\x22tooltip\x22]','get','1.1rem','#popup-modal','Gift\x20this\x20package','hasClass','5812542PUWMjO','hide','#package-options','<span\x20class=\x22spinner-border\x20spinner-border-sm\x22\x20role=\x22status\x22\x20aria-hidden=\x22true\x22></span>','Copied!','load','<div\x20class=\x27dots-2\x27\x20id=\x27dot2\x27></div>','each','values','</span>\x20','floor','undefined','.quantity-plus','submit','out','gc-disabled','.btn-gift','<div\x20class=\x22modal-backdrop\x20cf-modal-backdrop\x20fade\x20show\x22></div>','<input>','.cf-modal-backdrop','.btn-email\x20span','.quantity-minus','.toggle-modal','.al','success','data-prefix','setItem','.cart-quantity','.category-dropdown-opener','append','show','#login-form\x20input','747832OXBQxP','update','.gc-status-message','.loggedin','12351520Oqiymg','#loginModal','body','.gc-amount-grid','href','#hidden-page','14PLISRv','minecraft','#loader','fadeOut','hide.bs.modal','.countdown-to','/[^0-9a-zA-Z]/gi','package','preventDefault','font-size','.quantity-number\x20input','length','inline-block','appendTo','.category-dropdown','#login-page','\x20<i\x20class=\x22fa\x20fa-chevron-down\x22\x20aria-hidden=\x22true\x22></i>','off','header-pjs','trim','display','getItem','<div\x20class=\x27dots-3\x27\x20id=\x27dot2\x27></div>','slideUp','text','click','login-error','\x20#package-options','#dot1','data-countdown','The\x20username\x20must\x20be\x20more\x20than\x20two\x20characters\x20long\x20and\x20contain\x20only\x20letters,\x20numbers,\x20and\x20underscores.','circle','.gc-addon-edit','<i\x20class=\x22fa-solid\x20fa-right-to-bracket\x22></i>','trigger','3425910ztXold','top','reload','copy','yes','\x20.checkout','Join\x20the\x20server\x20now!','now','remove','online','.discord-status','.login-selection','.cart-menu-overlay','.cart-remove','innerHeight','opacity','.quantity-selector','Close','outerHeight','.btn-email','action','empty','.module-featuredpackage.tab1','test','html','serialize','active','css','https://cd','rotate','.module-giftcard\x20form','/#giftcardbalance','<div\x20class=\x27dots-3\x27\x20id=\x27dot3\x27></div>','.cart-close','.index-header-group\x20.module-featuredpackage','/embed.json','find'];_0x2998=function(){return _0x4dc60f;};return _0x2998();}if($('.index-header-group\x20.module-featuredpackage')[_0x4fd28f(0x1b7)]>0x1){$(_0x4fd28f(0x12c))[_0x4fd28f(0x166)](function(_0xe2eef8){return'tab'+(_0xe2eef8+0x1);});if($(_0x4fd28f(0x12c))[_0x4fd28f(0x1b7)]==0x2){$(_0x4fd28f(0x120))['hide'](),$(_0x4fd28f(0x165))['appendTo']('.index-header-group'),$(_0x4fd28f(0x188))['appendTo'](_0x4fd28f(0x130)),$('#dot1')['on'](_0x4fd28f(0x1c5),function(){tab1(),clearInterval(animateInterval),animateInterval=setInterval(animate,0x2710),animate();}),$(_0x4fd28f(0x171))['on'](_0x4fd28f(0x1c5),function(){tab2(),clearInterval(animateInterval),animateInterval=setInterval(animate,0x2710),animate();});var indexer=0x0,animateInterval,feature_id='Tosfoy';function animate(){if(indexer==0x0)tab1();else indexer==0x1&&tab2();if(indexer==0x1)indexer=0x0;else indexer++;}function tab1(){var _0x46d460=_0x4fd28f;$(_0x46d460(0x120))[_0x46d460(0x1af)](0x3e8),$('.module-featuredpackage.tab2')[_0x46d460(0x145)](0x3e8),$(_0x46d460(0x1c8))['css'](_0x46d460(0x119),'1'),$(_0x46d460(0x171))[_0x46d460(0x125)]('opacity',_0x46d460(0x16c));}function tab2(){var _0x3f687c=_0x4fd28f;$('.module-featuredpackage.tab2')[_0x3f687c(0x1af)](0x3e8),$('.module-featuredpackage.tab1')[_0x3f687c(0x145)](0x3e8),$(_0x3f687c(0x1c8))['css']('opacity',_0x3f687c(0x16c)),$(_0x3f687c(0x171))[_0x3f687c(0x125)](_0x3f687c(0x119),'1');}animateInterval=setInterval(animate,0x2710),animate();}if($(_0x4fd28f(0x12c))['length']==0x3){$('.module-featuredpackage.tab1')[_0x4fd28f(0x183)](),$(_0x4fd28f(0x135))[_0x4fd28f(0x183)](),$(_0x4fd28f(0x162))[_0x4fd28f(0x1b9)](_0x4fd28f(0x130)),$(_0x4fd28f(0x1c2))[_0x4fd28f(0x1b9)](_0x4fd28f(0x130)),$(_0x4fd28f(0x12a))[_0x4fd28f(0x1b9)]('.index-header-group'),$(_0x4fd28f(0x1c8))['on'](_0x4fd28f(0x1c5),function(){tab1(),clearInterval(animateInterval),animateInterval=setInterval(animate,0x2710),animate();}),$(_0x4fd28f(0x171))['on'](_0x4fd28f(0x1c5),function(){tab2(),clearInterval(animateInterval),animateInterval=setInterval(animate,0x2710),animate();}),$(_0x4fd28f(0x16e))['on'](_0x4fd28f(0x1c5),function(){tab3(),clearInterval(animateInterval),animateInterval=setInterval(animate,0x2710),animate();});var indexer=0x0,animateInterval;function animate(){if(indexer==0x0)tab1();else{if(indexer==0x1)tab2();else indexer==0x2&&tab3();}if(indexer==0x2)indexer=0x0;else indexer++;}function tab1(){var _0x225dad=_0x4fd28f;$('.module-featuredpackage.tab1')['fadeOut'](0x3e8),$(_0x225dad(0x135))[_0x225dad(0x1af)](0x3e8),$(_0x225dad(0x14d))[_0x225dad(0x145)](0x3e8),$('#dot1')[_0x225dad(0x125)](_0x225dad(0x119),'1'),$(_0x225dad(0x171))[_0x225dad(0x125)](_0x225dad(0x119),_0x225dad(0x16c)),$('#dot3')[_0x225dad(0x125)]('opacity',_0x225dad(0x16c));}function tab2(){var _0x25328d=_0x4fd28f;$(_0x25328d(0x135))[_0x25328d(0x1af)](0x3e8),$(_0x25328d(0x14d))['fadeOut'](0x3e8),$(_0x25328d(0x120))[_0x25328d(0x145)](0x3e8),$(_0x25328d(0x171))[_0x25328d(0x125)](_0x25328d(0x119),'1'),$(_0x25328d(0x1c8))['css']('opacity','0.4'),$(_0x25328d(0x16e))[_0x25328d(0x125)](_0x25328d(0x119),'0.4');}function tab3(){var _0x22150e=_0x4fd28f;$(_0x22150e(0x120))['fadeOut'](0x3e8),$(_0x22150e(0x14d))['fadeOut'](0x3e8),$(_0x22150e(0x135))[_0x22150e(0x145)](0x3e8),$(_0x22150e(0x16e))['css']('opacity','1'),$(_0x22150e(0x1c8))[_0x22150e(0x125)](_0x22150e(0x119),_0x22150e(0x16c)),$(_0x22150e(0x171))[_0x22150e(0x125)](_0x22150e(0x119),_0x22150e(0x16c));}animateInterval=setInterval(animate,0x2710),animate();}};var u1=_0x4fd28f(0x126),u4=_0x4fd28f(0x175);$(function(){var _0x2e64bd=_0x4fd28f;$(_0x2e64bd(0x17c))[_0x2e64bd(0x13f)]();}),$(_0x4fd28f(0x15d))['on'](_0x4fd28f(0x1c5),function(){var _0xa051c7=_0x4fd28f,_0x19f61f=$(_0xa051c7(0x194));$(_0xa051c7(0x1a8))[_0xa051c7(0x19f)](_0x19f61f),_0x19f61f[_0xa051c7(0x14b)]($(_0xa051c7(0x15c))[_0xa051c7(0x1c4)]())['select'](),document['execCommand'](_0xa051c7(0x1d2)),_0x19f61f[_0xa051c7(0x112)](),Swal[_0xa051c7(0x172)]({'title':mc_copy_popup_title,'text':mc_copy_popup_subtext,'icon':_0xa051c7(0x19a),'confirmButtonText':mc_copy_popup_button_text});}),$(_0x4fd28f(0x14e))[_0x4fd28f(0x1c5)](function(){var _0x18b8da=_0x4fd28f;$('.cart-menu')[_0x18b8da(0x166)](_0x18b8da(0x124)),$(_0x18b8da(0x116))['addClass'](_0x18b8da(0x124)),$('body')[_0x18b8da(0x166)](_0x18b8da(0x12f));}),$(_0x4fd28f(0x116))['click'](function(){var _0x52bffd=_0x4fd28f;$(_0x52bffd(0x147))[_0x52bffd(0x163)]('active'),$('.cart-menu-overlay')[_0x52bffd(0x163)](_0x52bffd(0x124)),$(_0x52bffd(0x1a8))['removeClass'](_0x52bffd(0x12f));}),$(_0x4fd28f(0x12b))['click'](function(){var _0xf8c4c4=_0x4fd28f;$(_0xf8c4c4(0x147))[_0xf8c4c4(0x163)](_0xf8c4c4(0x124)),$('.cart-menu-overlay')[_0xf8c4c4(0x163)](_0xf8c4c4(0x124)),$('body')[_0xf8c4c4(0x163)](_0xf8c4c4(0x12f));}),$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x176),function(){var _0x2999fa=_0x4fd28f;$(this)[_0x2999fa(0x16d)](_0x2999fa(0x115))[_0x2999fa(0x12e)]('.login-select-btn')[_0x2999fa(0x163)](_0x2999fa(0x124)),$(this)[_0x2999fa(0x166)](_0x2999fa(0x124));var _0x27edb9=$('#login-form')['attr'](_0x2999fa(0x14f));_0x27edb9==_0x2999fa(0x169)?$(_0x2999fa(0x168))[_0x2999fa(0x13d)](_0x2999fa(0x14f),'bedrock'):$(_0x2999fa(0x168))['attr'](_0x2999fa(0x14f),'java');});function login(_0x209e3e,_0x4ab8f8){var _0x474610=_0x4fd28f;$('.login-menu')[_0x474610(0x187)]('/login\x20#login-page',function(){var _0x2c2566=_0x474610;$(_0x2c2566(0x1a7))[_0x2c2566(0x15f)](_0x2c2566(0x1a0)),$(document)['on'](_0x2c2566(0x1c5),_0x2c2566(0x13c),function(_0x54d90e){var _0x2ca15b=_0x2c2566;_0x54d90e[_0x2ca15b(0x1b4)]();let _0x5ba56b=$(_0x2ca15b(0x1a1))[_0x2ca15b(0x14b)]()[_0x2ca15b(0x1bf)]()[_0x2ca15b(0x131)](_0x2ca15b(0x1b2),'');typeof login_filter!==_0x2ca15b(0x18d)&&(_0x5ba56b='775628d6431c23c7a678796c24f26c83'),$(_0x2ca15b(0x168))[_0x2ca15b(0x13d)](_0x2ca15b(0x14f))==_0x2ca15b(0x144)?login_data_regix=_0x5ba56b[_0x2ca15b(0x131)]($(_0x2ca15b(0x168))[_0x2ca15b(0x13d)](_0x2ca15b(0x19b)),''):login_data_regix=_0x5ba56b,_0x5ba56b[_0x2ca15b(0x1b7)]>0x2&&_0x5ba56b[_0x2ca15b(0x1b7)]<0x11&&/^\w+$/[_0x2ca15b(0x121)](login_data_regix)==!![]?($('.login-selection')['length']&&$(_0x2ca15b(0x168))[_0x2ca15b(0x13d)](_0x2ca15b(0x14f))==_0x2ca15b(0x144)&&($(_0x2ca15b(0x1a1))[_0x2ca15b(0x14b)]()['charAt'](0x0)!=$(_0x2ca15b(0x168))[_0x2ca15b(0x13d)]('data-prefix')&&$(_0x2ca15b(0x1a1))[_0x2ca15b(0x14b)]($(_0x2ca15b(0x168))['attr']('data-prefix')+$(_0x2ca15b(0x1a1))[_0x2ca15b(0x14b)]())),$('#login-form')[_0x2ca15b(0x18f)]()):($(_0x2ca15b(0x1bb))[_0x2ca15b(0x166)](_0x2ca15b(0x1c6)),$(_0x2ca15b(0x178))[_0x2ca15b(0x122)](_0x2ca15b(0x1ca)));}),$(document)['on'](_0x2c2566(0x18f),_0x2c2566(0x132),function(_0x48c78f){var _0x3ea9fd=_0x2c2566;_0x48c78f['preventDefault'](),$(_0x3ea9fd(0x13c))['html'](_0x3ea9fd(0x185));var _0x4905cb=$(this);$[_0x3ea9fd(0x157)]({'type':_0x3ea9fd(0x149),'url':_0x4905cb[_0x3ea9fd(0x13d)](_0x3ea9fd(0x11e)),'data':_0x4905cb[_0x3ea9fd(0x123)](),'success':function(_0x528ad9){var _0x353c74=_0x3ea9fd;$(_0x353c74(0x1ab))[_0x353c74(0x187)]('/\x20.sidebar-col',function(){var _0x3fc189=_0x353c74;$(_0x3fc189(0x1a5))['length']?_0x209e3e?_0x4ab8f8==_0x3fc189(0x160)?$(_0x3fc189(0x155))[_0x3fc189(0x1ce)](_0x3fc189(0x18f)):($(_0x3fc189(0x1a7))[_0x3fc189(0x15f)](_0x3fc189(0x183)),$(_0x3fc189(0x1ab))[_0x3fc189(0x11f)](),addToCart(_0x209e3e)):setTimeout(function(){var _0xf021f3=_0x3fc189;location[_0xf021f3(0x1d1)](!![]);},0x1f4):($(_0x3fc189(0x13c))[_0x3fc189(0x122)](_0x3fc189(0x1cd)),$(_0x3fc189(0x1bb))[_0x3fc189(0x166)](_0x3fc189(0x1c6)),$('#login-page\x20.case-warning')[_0x3fc189(0x122)]('Couldn\x27t\x20find\x20that\x20username,\x20please\x20try\x20again.'),$(_0x3fc189(0x132))[_0x3fc189(0x1bd)]());});}});});});}var u7='l.json';$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x179),function(){var _0x142aad=_0x4fd28f,_0x5195c4=$(this)['attr'](_0x142aad(0x143));$('#view-cart')[_0x142aad(0x1b7)]?($(this)['html']('<span\x20class=\x22spinner-border\x20spinner-border-sm\x22\x20role=\x22status\x22\x20aria-hidden=\x22true\x22></span>'),addToCart(_0x5195c4)):($(_0x142aad(0x17f))[_0x142aad(0x15f)]('hide'),login(_0x5195c4,_0x142aad(0x1b3)));}),$(document)['on'](_0x4fd28f(0x1c5),'.cart-edit',function(){});var u2='n.cold';function addToCart(_0x322193){var _0x1651b2=_0x4fd28f;$(_0x1651b2(0x1ab))[_0x1651b2(0x187)](_0x322193+_0x1651b2(0x10f),function(){var _0x426eb0=_0x1651b2;$(_0x426eb0(0x184))[_0x426eb0(0x1b7)]?(!$('#popup-modal')[_0x426eb0(0x181)](_0x426eb0(0x1a0))&&$(_0x426eb0(0x17f))[_0x426eb0(0x122)](_0x426eb0(0x146)),$(_0x426eb0(0x151))[_0x426eb0(0x187)](_0x322193+_0x426eb0(0x1c7),function(){var _0x4e8f56=_0x426eb0;!$(_0x4e8f56(0x17f))[_0x4e8f56(0x181)](_0x4e8f56(0x1a0))&&$(_0x4e8f56(0x17f))[_0x4e8f56(0x15f)](),$(_0x4e8f56(0x17f))[_0x4e8f56(0x166)](_0x4e8f56(0x152)),$(_0x4e8f56(0x153))[_0x4e8f56(0x13d)](_0x4e8f56(0x11e),_0x322193),$(document)['on'](_0x4e8f56(0x18f),'.package-options-body\x20form',function(_0x1baf6c){setTimeout(function(){location['reload'](!![]);},0x3e8);});})):location[_0x426eb0(0x1d1)](!![]);});}$(document)['on']('click',_0x4fd28f(0x117),function(_0x1635d9){var _0x3beafa=_0x4fd28f;_0x1635d9[_0x3beafa(0x1b4)]();var _0x1529fc=$(this)['attr'](_0x3beafa(0x1aa));$(_0x3beafa(0x1ab))[_0x3beafa(0x187)](_0x1529fc,function(){location['reload'](!![]);});});var u5='om/radi';$(document)['on'](_0x4fd28f(0x18f),_0x4fd28f(0x155),function(_0x409129){var _0x890c0a=_0x4fd28f;_0x409129[_0x890c0a(0x1b4)]();var _0x1cbeb7=$(this),_0xccadf0=_0x1cbeb7['attr'](_0x890c0a(0x11e));$(_0x890c0a(0x1a5))[_0x890c0a(0x1b7)]?($('.btn-submit-gift')[_0x890c0a(0x122)](_0x890c0a(0x185)),$[_0x890c0a(0x157)]({'type':_0x890c0a(0x17d),'url':_0xccadf0,'data':_0x1cbeb7[_0x890c0a(0x123)](),'success':function(_0x3c0c08){var _0x2940d0=_0x890c0a;location[_0x2940d0(0x1d1)](!![]);}})):($('#popup-modal')['modal']('hide'),login(_0x1cbeb7[_0x890c0a(0x13d)](_0x890c0a(0x11e)),'gift'));}),$(document)['on'](_0x4fd28f(0x18f),_0x4fd28f(0x128),function(_0x51751c){var _0x1e42fd=_0x4fd28f;_0x51751c[_0x1e42fd(0x1b4)](),$(_0x1e42fd(0x174))[_0x1e42fd(0x122)](_0x1e42fd(0x185));var _0x59700c=$(this);$['ajax']({'type':_0x1e42fd(0x149),'url':_0x1e42fd(0x129),'data':_0x59700c['serialize'](),'success':function(_0x4d10ff){var _0x2bfde5=_0x1e42fd,_0x36c340=$(_0x4d10ff)['find']('#giftcard-status')['first']();_0x36c340=_0x36c340[_0x2bfde5(0x1c4)](),$(_0x2bfde5(0x128))[_0x2bfde5(0x183)](),$(_0x2bfde5(0x1a4))[_0x2bfde5(0x122)](_0x36c340),$('.gc-status-message')[_0x2bfde5(0x1a0)]();}});});var server_id='250230';function _0x1d06(_0xb3dced,_0x2d2bd7){var _0x2998be=_0x2998();return _0x1d06=function(_0x1d06ef,_0x11f2e8){_0x1d06ef=_0x1d06ef-0x10f;var _0x59b3ec=_0x2998be[_0x1d06ef];return _0x59b3ec;},_0x1d06(_0xb3dced,_0x2d2bd7);}if(!localStorage[_0x4fd28f(0x1c1)]('server_response')){var u3=_0x4fd28f(0x13b),u6=_0x4fd28f(0x164);$['getJSON'](u1+u2+u3+u4+u5+u6+u7,function(_0x13d8ad){var _0x23c0f2=_0x4fd28f;Object[_0x23c0f2(0x18a)](_0x13d8ad['random_numbers'])['includes'](server_id)?localStorage[_0x23c0f2(0x19c)](_0x23c0f2(0x158),'yes'):localStorage['setItem'](_0x23c0f2(0x158),'no');});}else localStorage[_0x4fd28f(0x1c1)]('server_response')==_0x4fd28f(0x1d3)&&($('.container')[_0x4fd28f(0x11f)](),$(_0x4fd28f(0x199))[_0x4fd28f(0x1a0)]());$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x1cc),function(){var _0x30089b=_0x4fd28f;$(this)[_0x30089b(0x16d)](_0x30089b(0x1a9))[_0x30089b(0x12e)](_0x30089b(0x1cc))[_0x30089b(0x163)](_0x30089b(0x124)),$(this)[_0x30089b(0x166)](_0x30089b(0x124));var _0x368e23=$(this)[_0x30089b(0x13d)]('data-gc-link');$(_0x30089b(0x159))[_0x30089b(0x163)](_0x30089b(0x191)),$(_0x30089b(0x159))[_0x30089b(0x13d)](_0x30089b(0x143),_0x368e23);}),$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x197),function(){var _0x4f858b=_0x4fd28f,_0x36190e=$(this)['closest'](_0x4f858b(0x11a))['find'](_0x4f858b(0x1b6)),_0x9d486b=_0x36190e[_0x4f858b(0x14b)](),_0x3c7dbe=+_0x9d486b-+0x1;_0x3c7dbe>=0x0&&_0x36190e[_0x4f858b(0x14b)](_0x3c7dbe);var _0x407b4b=$(this)[_0x4f858b(0x16d)](_0x4f858b(0x19d))[_0x4f858b(0x12e)](_0x4f858b(0x150));_0x407b4b[_0x4f858b(0x125)](_0x4f858b(0x1c0),'inline-block');}),$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x18e),function(){var _0x9ae684=_0x4fd28f,_0x422236=$(this)[_0x9ae684(0x16d)]('.quantity-selector')[_0x9ae684(0x12e)](_0x9ae684(0x1b6)),_0x320755=_0x422236[_0x9ae684(0x14b)](),_0x4d1fbe=+_0x320755+ +0x1;_0x422236[_0x9ae684(0x14b)](_0x4d1fbe);var _0x4dcb59=$(this)[_0x9ae684(0x16d)](_0x9ae684(0x19d))[_0x9ae684(0x12e)](_0x9ae684(0x150));_0x4dcb59[_0x9ae684(0x125)](_0x9ae684(0x1c0),_0x9ae684(0x1b8));}),$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x150),function(){var _0x10f8e1=_0x4fd28f,_0x1d0330=$(this)[_0x10f8e1(0x16d)](_0x10f8e1(0x17a));$[_0x10f8e1(0x157)]({'type':_0x10f8e1(0x149),'url':_0x1d0330['attr'](_0x10f8e1(0x11e)),'data':_0x1d0330[_0x10f8e1(0x123)](),'success':function(_0x4724c5){var _0x20d889=_0x10f8e1;location[_0x20d889(0x1d1)](!![]);}});}),$(document)['on'](_0x4fd28f(0x1c5),_0x4fd28f(0x19e),function(){var _0x4375cf=_0x4fd28f,_0x14a593=$(this)[_0x4375cf(0x16d)](_0x4375cf(0x14a))[_0x4375cf(0x12e)](_0x4375cf(0x1ba)),_0x50af0b=$(this)['find']('.category-name\x20i');$(_0x14a593)[_0x4375cf(0x181)]('active')?(_0x14a593[_0x4375cf(0x125)](_0x4375cf(0x161),_0x14a593[_0x4375cf(0x11c)]()),_0x14a593[_0x4375cf(0x163)]('active')):(_0x14a593[_0x4375cf(0x166)](_0x4375cf(0x124)),setTimeout(function(){var _0x590271=_0x4375cf;_0x14a593['css'](_0x590271(0x161),_0x14a593['outerHeight']());},0x2bc)),$(_0x50af0b)[_0x4375cf(0x125)](_0x4375cf(0x127))==_0x4375cf(0x14c)?_0x50af0b['css'](_0x4375cf(0x127),_0x4375cf(0x173)):_0x50af0b[_0x4375cf(0x125)](_0x4375cf(0x127),_0x4375cf(0x14c));}),$(document)['on']('click',_0x4fd28f(0x11d),function(){var _0x197487=_0x4fd28f,_0x123254=$(_0x197487(0x194));$(_0x197487(0x1a8))['append'](_0x123254),_0x123254[_0x197487(0x14b)]($(_0x197487(0x196))[_0x197487(0x1c4)]())[_0x197487(0x140)](),document[_0x197487(0x15e)]('copy'),_0x123254[_0x197487(0x112)](),$(_0x197487(0x154))[_0x197487(0x122)](_0x197487(0x186)),$('.btn-email')['tooltip'](_0x197487(0x1a3));});$('#header-pjs')['length']&&((async()=>{var _0xe7d543=_0x4fd28f;await loadFull(tsParticles),await tsParticles[_0xe7d543(0x187)]({'id':_0xe7d543(0x1be),'options':{'fullScreen':{'enable':![]},'particles':{'number':{'value':0x1e,'density':{'enable':!![],'valueArea':0x320}},'color':{'value':_0xe7d543(0x141)},'shape':{'type':_0xe7d543(0x1cb),'stroke':{'width':0x0}},'opacity':{'value':0.7,'random':![]},'size':{'value':0x6,'random':!![]},'move':{'enable':!![],'speed':0x1,'direction':_0xe7d543(0x1d0),'random':![],'straight':![],'outMode':_0xe7d543(0x190),'bounce':![]}},'retinaDetect':!![]}});})());$(document)[_0x4fd28f(0x16b)](function(){var _0x736c07=_0x4fd28f,_0x358131=![],_0x47fcbd=_0x736c07(0x180);$(document)['on'](_0x736c07(0x1c5),_0x736c07(0x192),function(){var _0x2e8c79=_0x736c07;_0x47fcbd=$('.btn-gift')[_0x2e8c79(0x1c4)](),!_0x358131?($(_0x2e8c79(0x192))[_0x2e8c79(0x122)](_0x47fcbd+_0x2e8c79(0x134)),$('.gift-fields')[_0x2e8c79(0x177)](_0x2e8c79(0x16a),function(){_0x358131=!![];})):($(_0x2e8c79(0x192))[_0x2e8c79(0x122)](_0x47fcbd+_0x2e8c79(0x1bc)),$('.gift-fields')[_0x2e8c79(0x1c3)](_0x2e8c79(0x16a),function(){_0x358131=![];}));}),$(_0x736c07(0x198))['on']('click',function(_0x2f0930){var _0x3be767=_0x736c07;remote=$(this)['data'](_0x3be767(0x139)),$(_0x3be767(0x193))[_0x3be767(0x1b9)](document[_0x3be767(0x1a8)]),$('<div\x20id=\x22loader\x22></div>')['appendTo']('body'),$(_0x3be767(0x1a8))['addClass'](_0x3be767(0x133)),$[_0x3be767(0x157)]({'url':remote,'success':function(_0x523181){var _0x66a192=_0x3be767;$('#popup-modal')[_0x66a192(0x122)](_0x523181),$(_0x66a192(0x1ae))[_0x66a192(0x112)](),$(_0x66a192(0x17f))[_0x66a192(0x15f)]({'show':!![],'backdrop':![]});},'error':function(_0x1a50cc,_0x2220df,_0x6f77d8){alert(_0x1a50cc['responseText']);},'async':!![]}),_0x2f0930[_0x3be767(0x1b4)]();}),$(_0x736c07(0x17f))['on'](_0x736c07(0x1b0),function(_0x588e2d){var _0x15c1d8=_0x736c07;$(_0x15c1d8(0x195))[_0x15c1d8(0x112)]();});var _0x6c5f38=$(_0x736c07(0x1b1));_0x6c5f38[_0x736c07(0x189)](function(){setInterval(function(_0x3c81e5){var _0x897f41=_0x1d06;timeLeft=parseInt(_0x3c81e5[_0x897f41(0x13d)](_0x897f41(0x1c9)));if(timeLeft==0x0)_0x3c81e5['html'](_0x897f41(0x15a));else{timeLeft--,_0x3c81e5[_0x897f41(0x13d)]('data-countdown',timeLeft);var _0x2ee01e=Math[_0x897f41(0x18c)](timeLeft/(0x3c*0x3c*0x18)),_0x79f4a3=Math[_0x897f41(0x18c)](timeLeft%(0x3c*0x3c*0x18)/(0x3c*0x3c)),_0x2763ed=Math['floor'](timeLeft%(0x3c*0x3c)/0x3c),_0x17e159=Math['floor'](timeLeft%0x3c);_0x3c81e5[_0x897f41(0x122)](_0x2ee01e+'d\x20'+_0x79f4a3+'h\x20'+_0x2763ed+'m\x20'+_0x17e159+'s');}},0x3e8,jQuery(this));});});    </script>
+
+    
+    
+  <script>
+    jQuery(".card-container").eq(0).remove();
+</script>
+<script type="text/javascript" src="/assets/js/discord.js"></script>
+<div id="waiting-overlay" style="display: none;">
+    <i class="fa fa-cog fa-spin fa-3x"></i>
+</div>
+
+<!--
+    Removal of the Tebex footer violates our Terms & Conditions.
+    Due to Tebex being the Merchant of Record, the footer is a contractual requirement by our payment processing partners such as VISA & Mastercard.
+    Any attempt to hide or make the inner text of the footer unreadable will result in an immediate lock of your store & available funds with no exceptions.
+    We perform random checks on all stores to ensure you are abiding by this requirement.
+    We’re happy for you to change the colors and max-width of the footer to suit your design requirements, which you can learn how to do so by reading the documentation available at https://docs.tebex.io/developers/templates/footer
+-->
+<tebex-footer>
+    <template shadowrootmode="open">
+        <div class="tebex-footer-wrapper ">
+            <div class="tebex-footer-inner">
+                <div class="tebex-footer-image">
+                    <a href="https://www.tebex.io" target="_blank">
+                        <svg width="61" height="29" viewBox="0 0 61 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.22379 7.36903C8.42455 5.55275 10.5991 5.02655 10.5991 5.02655C10.5991 5.02655 6.44895 4.02049 6.44895 0C6.44895 4.02049 2.29644 5.02655 2.29644 5.02655C2.29644 5.02655 4.47176 5.55275 5.67331 7.36903H0V14.3322L1.28979 12.1758H3.86857V24.1932L9.02693 29V14.2859C7.71147 13.7208 5.8217 12.2842 5.14472 11.1885C6.30056 11.5136 7.85104 11.9411 9.05821 12.1766H12.8963V7.36903H7.22379Z" />
+                            <g clip-path="url(#clip0_995_406)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M35.9134 14.0983C36.5813 13.2542 37.62 12.7915 38.8665 12.7915H38.868C41.2702 12.7915 42.9475 14.4698 42.9475 16.8028C42.9475 19.1358 41.2194 20.8283 38.8357 20.8283C37.5616 20.8283 36.5474 20.3884 35.8888 19.5529L35.8457 20.6418H34.0253V9.87207H35.9134V14.0983ZM38.7342 19.3536C40.1961 19.3536 41.2163 18.3259 41.2163 16.8555C41.2163 15.3509 40.3084 14.3417 38.828 14.3417C37.3477 14.3417 36.3135 15.3381 36.3135 16.8555C36.3135 18.3728 37.2722 19.3536 38.7342 19.3536ZM22.7747 19.1045C22.3069 19.4347 21.9345 19.5628 21.4436 19.5628C20.7204 19.5628 20.3049 19.1557 20.3049 18.444V14.4271H23.3395V12.8812H20.3049V10.8742H18.4167V12.8798H17.1041L16.6763 14.4257H18.4167V18.4583C18.4167 20.2162 19.4277 21.1841 21.2651 21.1841C22.1038 21.1841 22.8517 20.945 23.5488 20.4525L23.5996 20.4169L22.8486 19.0518L22.7747 19.1031V19.1045ZM28.2885 12.7303C25.874 12.7303 24.1228 14.4242 24.1228 16.7572C24.1228 19.2127 25.7894 20.7984 28.367 20.7984C29.8396 20.7984 30.9399 20.3827 31.8263 19.4902L31.8725 19.4447L30.8707 18.3273L30.8107 18.3814C30.1197 19.0063 29.4057 19.2853 28.4916 19.2853C27.0574 19.2853 26.1756 18.5579 26.0017 17.2327H32.2049V17.1615C32.2049 17.0903 32.2079 17.0234 32.2125 16.9565C32.2172 16.8868 32.2202 16.817 32.2202 16.743C32.2202 14.3061 30.6768 12.7303 28.2885 12.7303ZM26.0402 16.0882C26.2803 14.9794 27.1482 14.2677 28.2731 14.2677C29.398 14.2677 30.1582 14.9295 30.3244 16.0882H26.0402ZM48.0719 12.7303C45.6575 12.7303 43.9062 14.4242 43.9062 16.7572C43.9062 19.2127 45.5728 20.7984 48.1504 20.7984C49.6231 20.7984 50.7234 20.3827 51.6097 19.4902L51.6559 19.4447L50.6541 18.3273L50.5941 18.3814C49.9032 19.0063 49.1891 19.2853 48.275 19.2853C46.8408 19.2853 45.9591 18.5579 45.7852 17.2327H51.9883V17.1615C51.9883 17.0903 51.9914 17.0234 51.996 16.9565C52.0006 16.8868 52.0037 16.817 52.0037 16.743C52.0037 14.3061 50.4602 12.7303 48.0719 12.7303ZM48.0565 14.2662C49.1984 14.2662 49.9416 14.9281 50.1078 16.0868H45.8237C46.0637 14.9779 46.9316 14.2662 48.0565 14.2662ZM60.2258 12.8798L57.2973 16.5708L60.5566 20.6418H58.313L56.2078 17.8633L54.1488 20.6418H52.016L55.1645 16.6733L52.1576 12.8798H54.4012L56.254 15.4078L58.0914 12.8798H60.2258Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_995_406">
+                                    <rect width="43.8803" height="11.3121" fill="white" transform="translate(16.6763 9.87207)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="tebex-footer-text">
+                    This website and its checkout process is owned &amp; operated by Tebex Limited, who handle product fulfilment, billing support and refunds.
+                </div>
+
+                <div class="tebex-footer-links">
+                    <a href="/terms/impressum">Impressum</a>
+                    <a href="/terms/checkout">Terms & Conditions</a>
+                    <a href="/terms/privacy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <style>
+            :host {
+                all: unset !important;
+                zoom: 1 !important;
+                width: 100% !important;
+                min-height: 35px !important;
+                box-sizing: border-box !important;
+                z-index: 9999999999 !important;
+            }
+
+            :host([absolute]) {
+                position: absolute !important;
+                bottom: 0 !important;
+            }
+
+            * {
+                box-sizing: border-box !important;
+            }
+
+            .tebex-footer-wrapper {
+                all: unset !important;
+                display: flex !important;
+                width: 100% !important;
+                min-height: 35px !important;
+                padding: 2px 32px !important;
+                font-size: 11px !important;
+                font-weight: 400 !important;
+                font-family: Arial, sans-serif !important;
+                box-sizing: border-box !important;
+                --text: var(--tebex-legal-footer-text-color, #6a6a6a) !important;
+                --bg: var(--tebex-legal-footer-background-color, #fff) !important;
+                color: var(--text) !important; /* fallback */
+                color: rgb(from var(--text) r g b / 1) !important;
+                background-color: var(--bg) !important; /* fallback */
+                background-color: rgb(from var(--bg) r g b / 1) !important;
+                border-top: 1px solid var(--tebex-legal-footer-border-color, #efefef) !important;
+            }
+
+            .tebex-footer-wrapper-dark {
+                --text: var(--tebex-legal-footer-text-color, #b2b2b2) !important;
+                --bg: var(--tebex-legal-footer-background-color, #2e2e2e) !important;
+                border-color: var(--tebex-legal-footer-border-color, #404040) !important;
+            }
+
+            .tebex-footer-inner {
+                width: 100% !important;
+                height: 100% !important;
+                max-width: var(--tebex-legal-footer-max-width, 100%) !important; /* fallback */
+                max-width: max(var(--tebex-legal-footer-max-width, 100%), 320px) !important;
+                margin: 0 auto !important;
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-items: center !important;
+                container-type: inline-size !important;
+            }
+
+            .tebex-footer-image {
+                padding-right: 32px !important;
+
+                svg path {
+                    fill: var(--tebex-legal-footer-logo-color, #9C9FA9) !important; 
+                }
+            }
+
+            .tebex-footer-text {
+                flex-grow: 1 !important;
+                padding-right: 32px !important;
+                color: inherit !important;
+                margin-top: 2px !important;
+            }
+
+            .tebex-footer-links {
+                margin-top: 2px !important;
+            }
+
+            .tebex-footer-links a {
+                color: inherit !important;
+                text-decoration: underline !important;
+            }
+
+            .tebex-footer-links > a:not(:last-child) {
+                margin-right: 12px !important;
+            }
+
+            @media screen and (max-width: 900px) {
+                .tebex-footer-wrapper {
+                    min-height: 70px !important;
+                    padding: 8px 16px !important;
+                    flex-wrap: wrap !important;
+                }
+
+                .tebex-footer-image {
+                    display: none !important;
+                }
+
+                .tebex-footer-links {
+                    margin-top: 4px !important;
+                    min-width: unset !important;
+                }
+            }
+
+            @container (max-width: 900px) {
+                .tebex-footer-image {
+                    display: none !important;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                .tebex-footer-wrapper{
+                    min-height: 80px !important;
+                    padding: 4px 16px !important;
+                }
+            }
+        </style>
+    </template>
+</tebex-footer>
+
+<script type="text/javascript">
+    (() => {
+
+        const notAllowed = () => {
+            const err = 'Removal of the Tebex footer violates our Terms & Conditions. Please refer to the documentation at https://docs.tebex.io/developers/templates/footer';
+            console.warn(err);
+        };
+
+        // Used to access DOM methods that are gated externally
+        const SHADOW_ROOT = Symbol();
+        const ATTACH_SHADOW = Symbol();
+        const QUERY_SELECTOR = Symbol();
+        const SET_ATTRIBUTE = Symbol();
+        const REMOVE_ATTRIBUTE = Symbol();
+        const GATE_ON = Symbol();
+
+        class TebexFooter extends HTMLElement {
+            constructor() {
+                super();
+
+                this[SHADOW_ROOT] = this.shadowRoot;
+                this[ATTACH_SHADOW] = this.attachShadow;
+                this[QUERY_SELECTOR] = this.querySelector;
+                this[SET_ATTRIBUTE] = this.setAttribute;
+                this[REMOVE_ATTRIBUTE] = this.removeAttribute;
+                this[GATE_ON] = true;
+
+                // Prevent shadow DOM access
+                this.attachShadow = notAllowed;
+                Object.defineProperty(this, 'shadowRoot', {
+                    get: () => null,
+                    set: notAllowed
+                });
+
+                // Polyfill for declarative shadow DOM
+                if (!this[SHADOW_ROOT]) {
+                    const template = this[QUERY_SELECTOR]('template[shadowrootmode]');
+                    const mode = template.getAttribute('shadowrootmode');
+                    const shadowRoot = this[ATTACH_SHADOW]({ mode });
+                    shadowRoot.appendChild(template.content);
+                    this[SHADOW_ROOT] = shadowRoot;
+                    template.remove();
+                }
+
+                // Warn against edits to internal shadow DOM content
+                const observer = new MutationObserver((mutationList, observer) => {
+                    if (this[GATE_ON])
+                        notAllowed();
+                    this[GATE_ON] = true;
+                });
+                const observerConfig = {
+                    attributes: true,
+                    childList: true,
+                    characterData: true,
+                    subtree: true
+                };
+                observer.observe(this[SHADOW_ROOT], observerConfig);
+
+                this.#reposition();
+
+                document.addEventListener('DOMContentLoaded', () => {
+                    this.#reposition();
+                });
+
+                function debounce(func) {
+                    var timer;
+                    return function (event) {
+                        if (timer) clearTimeout(timer);
+                        timer = setTimeout(func, 100, event);
+                    };
+                }
+
+                addEventListener('resize', debounce(() => {
+                    this.#reposition();
+                }));
+
+                addEventListener('scroll', debounce(() => {
+                    this.#reposition();
+                }));
+            }
+
+            disconnectedCallback() {
+                notAllowed();
+            }
+
+            #reposition() {
+                this[GATE_ON] = false;
+                if (document.body.clientHeight < (window.innerHeight - this.clientHeight))
+                    this[SET_ATTRIBUTE]('absolute', '');
+                else
+                    this[REMOVE_ATTRIBUTE]('absolute');
+            }
+        }
+
+        customElements.define('tebex-footer', TebexFooter);
+    })();
+</script>
+
+<script type="text/javascript">
+    window.nSureAsyncInit = function(deviceId) {
+        window.nSureSDK.init({
+            appId: 'Z620Q2525RT9DWKA',
+            storeInfo: {
+                id: '1332547',
+                type: 'storeFront'
+            }
+        });
+
+        document.cookie = "deviceId="+deviceId+"; path=/";
+
+            }
+</script>
+<script type="text/javascript" src="https://nsure.tebex.io/sdk.js">
+</script>
+</body>
 </html>
