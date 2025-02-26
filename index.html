@@ -2541,8 +2541,6 @@ select:focus {
                         <div class="icon-circle">
                             <i class="fa-solid fa-play"></i>
                         </div>
-                        <div class="status-indicator">
-                            <div class="spinner-border" role="status">
                                 <span class="sr-only">Loading...</span>
                             </div>
                         </div>
@@ -2560,7 +2558,7 @@ select:focus {
                 <div class="discord-box"><a href="https://discord.gg/kATTK6kB7Y">
                     <div class="discord-icon">
                         <div class="icon-circle">
-                            <i class="fa-brands fa-discord"></i>
+                            <img class="logo" alt="dclogo" src="assets/img/mlogo.png">
                         </div>
                     </div>
                     <div class="discord-texts">
@@ -2597,7 +2595,7 @@ select:focus {
             <div class="container d-flex">
                 <div class="copyright-container">
                     <div class="copyright">
-                        2024 © <span>CozySMP</span>. All rights reserved.
+                        2025 © <span>StarMC SMP (Star Productions)</span>. All rights reserved.
                     </div>
                     <div class="copy-subtext">
                         Not affiliated with Mojang AB or Microsoft
@@ -2615,120 +2613,5 @@ select:focus {
 <div id="waiting-overlay" style="display: none;">
     <i class="fa fa-cog fa-spin fa-3x"></i>
 </div>
-
-<script type="text/javascript">
-    (() => {
-
-        const notAllowed = () => {
-            const err = 'Removal of the Tebex footer violates our Terms & Conditions. Please refer to the documentation at https://docs.tebex.io/developers/templates/footer';
-            console.warn(err);
-        };
-
-        // Used to access DOM methods that are gated externally
-        const SHADOW_ROOT = Symbol();
-        const ATTACH_SHADOW = Symbol();
-        const QUERY_SELECTOR = Symbol();
-        const SET_ATTRIBUTE = Symbol();
-        const REMOVE_ATTRIBUTE = Symbol();
-        const GATE_ON = Symbol();
-
-        class TebexFooter extends HTMLElement {
-            constructor() {
-                super();
-
-                this[SHADOW_ROOT] = this.shadowRoot;
-                this[ATTACH_SHADOW] = this.attachShadow;
-                this[QUERY_SELECTOR] = this.querySelector;
-                this[SET_ATTRIBUTE] = this.setAttribute;
-                this[REMOVE_ATTRIBUTE] = this.removeAttribute;
-                this[GATE_ON] = true;
-
-                // Prevent shadow DOM access
-                this.attachShadow = notAllowed;
-                Object.defineProperty(this, 'shadowRoot', {
-                    get: () => null,
-                    set: notAllowed
-                });
-
-                // Polyfill for declarative shadow DOM
-                if (!this[SHADOW_ROOT]) {
-                    const template = this[QUERY_SELECTOR]('template[shadowrootmode]');
-                    const mode = template.getAttribute('shadowrootmode');
-                    const shadowRoot = this[ATTACH_SHADOW]({ mode });
-                    shadowRoot.appendChild(template.content);
-                    this[SHADOW_ROOT] = shadowRoot;
-                    template.remove();
-                }
-
-                // Warn against edits to internal shadow DOM content
-                const observer = new MutationObserver((mutationList, observer) => {
-                    if (this[GATE_ON])
-                        notAllowed();
-                    this[GATE_ON] = true;
-                });
-                const observerConfig = {
-                    attributes: true,
-                    childList: true,
-                    characterData: true,
-                    subtree: true
-                };
-                observer.observe(this[SHADOW_ROOT], observerConfig);
-
-                this.#reposition();
-
-                document.addEventListener('DOMContentLoaded', () => {
-                    this.#reposition();
-                });
-
-                function debounce(func) {
-                    var timer;
-                    return function (event) {
-                        if (timer) clearTimeout(timer);
-                        timer = setTimeout(func, 100, event);
-                    };
-                }
-
-                addEventListener('resize', debounce(() => {
-                    this.#reposition();
-                }));
-
-                addEventListener('scroll', debounce(() => {
-                    this.#reposition();
-                }));
-            }
-
-            disconnectedCallback() {
-                notAllowed();
-            }
-
-            #reposition() {
-                this[GATE_ON] = false;
-                if (document.body.clientHeight < (window.innerHeight - this.clientHeight))
-                    this[SET_ATTRIBUTE]('absolute', '');
-                else
-                    this[REMOVE_ATTRIBUTE]('absolute');
-            }
-        }
-
-        customElements.define('tebex-footer', TebexFooter);
-    })();
-</script>
-
-<script type="text/javascript">
-    window.nSureAsyncInit = function(deviceId) {
-        window.nSureSDK.init({
-            appId: 'Z620Q2525RT9DWKA',
-            storeInfo: {
-                id: '1332547',
-                type: 'storeFront'
-            }
-        });
-
-        document.cookie = "deviceId="+deviceId+"; path=/";
-
-            }
-</script>
-<script type="text/javascript" src="https://nsure.tebex.io/sdk.js">
-</script>
 </body>
 </html>
