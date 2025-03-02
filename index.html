@@ -161,14 +161,19 @@ body {
 
 /* Header */
 .header {
-    background: var(--header-background) no-repeat;
-    background-position: var(--background-position) center !important;
-    background-size: cover;
+    background: url('./assets/background/bg.png') no-repeat center center; /* Sets the image as the background */
+    background-size: cover; /* Ensures the image covers the entire header */
     z-index: 1;
     width: 100%;
     position: relative;
     height: var(--header-height);
 }
+
+.header:before,
+.header:after {
+    content: none; /* Completely removes the overlays */
+}
+
 
 
 
