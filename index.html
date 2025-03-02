@@ -64,15 +64,15 @@
 }
 
 body {
-    background: var(--background-bg);
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    min-height: 100vh;
+    background: url('./assets/background/bg.png') no-repeat center center fixed; /* Apply the background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    margin: 0; /* Remove default body margins */
+    height: 100vh; /* Ensure it fills the entire viewport */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
+
 
 .noscroll {
     height: 100%;
@@ -157,35 +157,6 @@ body {
 .btn-header.btn-home i {
     margin-right: 0.3rem;
 }
-
-
-/* Header */
-.header {
-    background: url('./assets/background/bg.png') no-repeat center center; /* Display the image */
-    background-size: cover; /* Ensure the image covers the full area */
-    position: relative;
-    height: var(--header-height); /* Keep header height intact */
-    z-index: 1;
-}
-
-.header:before {
-    display: none;
-    background: none;
-}
-
-
-.header:after {
-    content: "";
-    background: none; /* Removes any overlays or gradients */
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 0; /* Ensure it doesn't occupy any visible space */
-    z-index: 10;
-    display: none; /* Prevent it from rendering entirely */
-}
-
 
 
 .logo-ds-flex {
@@ -2532,8 +2503,6 @@ select:focus {
             </div>
             </div>
         </div>
-        
-        <div class="header" id="header-pjs" style="--header-background: url('./assets/background/bg.png'); --background-position: center"></div>
         
         <div class="logo-ds-flex" data-breakpoint="1100px">
             <div class="status-box-container">
