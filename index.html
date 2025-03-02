@@ -544,10 +544,14 @@ body {
 /* ---------- Util ---------- */
 
 .card {
+    position: absolute; /* Allows precise placement */
+    top: 60%; /* Adjusts the vertical position downwards */
+    left: 50%; /* Horizontally centers the card */
+    transform: translate(-50%, -50%); /* Ensures perfect centering */
+    padding: 2rem 2.5rem;
     border-radius: 10px;
     background-color: var(--element-bg);
-    box-shadow: 0px 0px 0px 2px rgba(255,255,255,0.03) inset;
-    margin: 0 auto;
+    box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.03) inset;
 }
 
 .main-container {
