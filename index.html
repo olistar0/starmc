@@ -192,17 +192,16 @@ body {
 
 
 .logo-ds-flex {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr auto 1fr;
-    left: 0;
-    top: var(--header-margin-top);
-    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the items horizontally */
+    justify-content: center; /* Centers the items vertically */
     position: absolute;
-    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the container */
     width: 100%;
     z-index: 10;
-    justify-content: center;
 }
 
 .status-box-container, .discord-box-container {
@@ -297,8 +296,10 @@ body {
 
 .status-box {
     display: flex;
-    justify-content: end;
-    margin-right: 3.5rem;
+    align-items: center; /* Aligns content vertically */
+    justify-content: center; /* Aligns content horizontally */
+    margin: 0 auto;
+    text-align: center;
     cursor: pointer;
 }
 
