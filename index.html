@@ -171,7 +171,7 @@ body {
 }
 
 .header:before {
-    background: linear-gradient(var(--background-overlay), var(--background-bg));
+    background: none; /* Remove the gradient overlay */
     content: "";
     position: absolute;
     top: 0;
@@ -183,7 +183,7 @@ body {
 }
 
 .header:after {
-    background: linear-gradient(var(--secondary-background-overlay), transparent);
+    background: none; /* Remove the secondary gradient overlay */
     height: var(--header-height);
     content: "";
     position: absolute;
@@ -193,6 +193,7 @@ body {
     z-index: 10;
     display: block;
 }
+
 
 .logo-ds-flex {
     display: grid;
