@@ -544,14 +544,40 @@ body {
 /* ---------- Util ---------- */
 
 .card {
-    position: absolute; /* Allows precise placement */
-    top: 60%; /* Adjusts the vertical position downwards */
-    left: 50%; /* Horizontally centers the card */
-    transform: translate(-50%, -50%); /* Ensures perfect centering */
+    position: absolute;
+    top: 60%; /* Adjust vertical placement for larger screens */
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem 2.5rem;
     border-radius: 10px;
     background-color: var(--element-bg);
     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.03) inset;
+    max-width: 90%; /* Prevents overflowing on small screens */
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .card {
+        top: 50%; /* Centers the card vertically for smaller screens */
+        transform: translate(-50%, -50%);
+        width: 90%; /* Ensures the card fits within the screen */
+        padding: 1.5rem 1.5rem; /* Adjust padding for smaller viewports */
+    }
+
+    .store-heading {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .store-subheading {
+        font-size: 1rem; /* Slightly reduce size of the subheading */
+        margin-top: 0.5rem;
+    }
+
+    .store-description {
+        font-size: 0.9rem; /* Adjust text size for readability */
+        margin-top: 0.8rem;
+    }
 }
 
 .main-container {
