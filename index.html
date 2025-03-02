@@ -161,6 +161,35 @@ body {
     margin-right: 0.3rem;
 }
 
+/* Header */
+.header {
+    background: url('./assets/background/bg.png') no-repeat center center; /* Display the image */
+    background-size: cover; /* Ensure the image covers the full area */
+    position: relative;
+    height: var(--header-height); /* Keep header height intact */
+    z-index: 1;
+}
+
+.header:before {
+    display: none;
+    background: none;
+}
+
+
+.header:after {
+    content: "";
+    background: none; /* Removes any overlays or gradients */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 0; /* Ensure it doesn't occupy any visible space */
+    z-index: 10;
+    display: none; /* Prevent it from rendering entirely */
+}
+
+
+
 
 .logo-ds-flex {
     display: grid;
