@@ -161,13 +161,18 @@ body {
 
 /* Header */
 .header {
-    background: url('./assets/background/bg.png') no-repeat center center; /* Sets the image as the background */
-    background-size: cover; /* Ensures the image covers the entire header */
-    z-index: 1;
-    width: 100%;
+    background: url('./assets/background/bg.png') no-repeat center center; /* Display the image */
+    background-size: cover; /* Ensure the image covers the full area */
     position: relative;
-    height: var(--header-height);
+    height: var(--header-height); /* Keep header height intact */
+    z-index: 1;
 }
+
+.header:before,
+.header:after {
+    display: none; /* Completely remove any additional overlays */
+}
+
 
 
 
