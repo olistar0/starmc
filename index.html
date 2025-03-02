@@ -319,8 +319,7 @@ body {
 }
 
 .spinner-border {
-    width: 0.8rem;
-    height: 0.8rem;
+    display: none;
 }
 
 /* Popup */
@@ -2541,26 +2540,23 @@ select:focus {
         
         <div class="logo-ds-flex" data-breakpoint="1100px">
             <div class="status-box-container">
-                <div class="status-box">
-                    <div class="status-texts">
-                        <div class="sd-header">Play Now</div>
-                        <div class="sd-subtext">
-                            <div class="ip reel-1"><span id="ip">play.cozysmp.com</span></div>
-                            <div class="reel-2">Click to copy IP</div>
-                        </div>
-                    </div>
-                    <div class="status-icon">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-play"></i>
-                        </div>
-                        <div class="status-indicator">
-                            <div class="spinner-border" role="status">
-                                <span class="sr-only">Loading...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="status-box">
+    <div class="status-texts">
+        <div class="sd-header">Play Now</div>
+        <div class="sd-subtext">
+            <div class="ip reel-1">
+                <span id="ip">play.cozysmp.com</span>
             </div>
+            <div class="reel-2">Click to copy IP</div>
+        </div>
+    </div>
+    <div class="status-icon">
+        <div class="icon-circle">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+</div>
+
             
             <div class="logo-container">
                 <a href="/">
@@ -2625,18 +2621,21 @@ select:focus {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.0/dist/sweetalert2.all.min.js" integrity="sha256-tGZXBB9uK3MK1zLsI8b/1gZYQcBl8TMTi52kA2RmEKc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.5.0/tsparticles.bundle.min.js" integrity="sha256-TDVBfv16L7aCIhk+iOR1cwAT/HDOsBAxKRbA+CWjx10=" crossorigin="anonymous"></script>    
     <script>
-$(document).on('click', '#copy-ip', function () {
-    var tempInput = $('<input>');
-    $('body').append(tempInput);
-    tempInput.val($('#ip').text()).select();
-    document.execCommand('copy');
-    tempInput.remove();
+$(document).ready(function () {
+    // Copy IP to clipboard and show success popup
+    $(document).on('click', '.status-box', function () {
+        const tempInput = $('<input>');
+        $('body').append(tempInput);
+        tempInput.val($('#ip').text()).select();
+        document.execCommand('copy');
+        tempInput.remove();
 
-    Swal.fire({
-        title: 'IP Copied',
-        text: 'The server IP has been successfully copied to your clipboard!',
-        icon: 'success',
-        confirmButtonText: 'Got it'
+        Swal.fire({
+            title: 'IP Copied!',
+            text: 'The server IP has been successfully copied to your clipboard.',
+            icon: 'success',
+            confirmButtonText: 'Got it'
+        });
     });
 });
 
